@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
 import capabilitiesImg from '../../../../public/assets/capabilities-img.png';
+import SubHeading from '../subheading/SubHeading';
 
 const LeadForm = () => {
   return (
@@ -12,15 +13,12 @@ const LeadForm = () => {
       <div className="container mx-auto px-4 lg:px-8">
 
         {/* Header */}
-        <div className="mb-12">
-          <div className="flex items-center gap-2 mb-4">
-            <span className="w-8 h-[2px] bg-[#00AAA5]"></span>
-            <span className="text-[#00AAA5] font-medium text-sm tracking-wider uppercase">Help & Support</span>
-          </div>
-          <h2 className="text-4xl md:text-5xl font-bold text-[#072E4D] mb-4">
+        <div className="mb-10">
+          <SubHeading text="Help & Support" className='mb-3' color='#00AAA5' />
+          <h2 className="text-4xl md:text-[36px] font-bold text-primary mb-4">
             Get In Touch With Us.
           </h2>
-          <p className="text-gray-500 max-w-2xl font-light">
+          <p className="text-[#808080] max-w-2xl">
             Our advanced facilities and expert team enable us to deliver customized solutions for your unique engineering needs.
           </p>
         </div>
@@ -42,7 +40,6 @@ const LeadForm = () => {
                 fill
                 className="object-cover"
               />
-              {/* Overlay to match the blueish tint in design if needed, strictly optional based on asset */}
               <div className="absolute inset-0 bg-blue-900/10 mix-blend-multiply"></div>
             </motion.div>
 
@@ -54,7 +51,7 @@ const LeadForm = () => {
               viewport={{ once: true }}
               className="w-full lg:w-1/2 flex flex-col justify-center"
             >
-              <form className="space-y-6">
+              <form className="space-y-5 py-6">
 
                 <div className="grid grid-cols-1 gap-6">
                   {/* Full Name */}
@@ -69,7 +66,6 @@ const LeadForm = () => {
                       className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#00AAA5] focus:border-transparent text-gray-700 placeholder-gray-400 bg-white"
                     />
                   </div>
-                  {/* Phone Number - Moved here to match typical flow or keep independent if design differs. Design shows Email then Phone. */}
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

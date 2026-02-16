@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { ArrowUpRight, ArrowRight } from 'lucide-react';
 import capabilitiesImg from '../../../../public/assets/capabilities-img.png'
 import capabilitiesBg from '../../../../public/assets/capabilities-bg.png'
+import SubHeading from '../subheading/SubHeading';
 
 const Capabilities = () => {
   const capabilities = [
@@ -18,7 +19,7 @@ const Capabilities = () => {
   ];
 
   return (
-    <section className="relative w-full py-16 md:py-24 overflow-hidden">
+    <section className="relative w-full py-16 md:py-20 overflow-hidden">
       <div className="h-auto absolute inset-0 z-0">
         <Image
           src={capabilitiesBg}
@@ -32,13 +33,11 @@ const Capabilities = () => {
         <div className='flex items-center justify-between'>
 
           <div className="mb-12">
-            <p className="text-[#00AAA5] text-sm font-semibold tracking-wider uppercase mb-4">
-              Engineering and Fabrication
-            </p>
-            <h2 className="text-white text-3xl md:text-4xl lg:text-[42px] font-bold mb-4">
+            <SubHeading text="Core Engineering Capabilities" className='mb-3' color='white' />
+            <h2 className="text-white text-3xl md:text-4xl lg:text-[36px] font-bold mb-5">
               Engineering Capabilities
             </h2>
-            <p className="text-gray-300 text-sm md:text-base max-w-2xl">
+            <p className="text-white text-sm md:text-base max-w-2xl">
               We provide end-to-end engineering support aligned with project specifications, codes, and
               manufacturing expertise.
             </p>
@@ -46,9 +45,9 @@ const Capabilities = () => {
           <div className="mt-12 flex justify-end">
             <Link
               href="/capabilities"
-              className="group inline-flex items-center gap-3 text-white font-semibold py-3 px-6 rounded-full transition-all"
+              className="group inline-flex items-center gap-2.5 text-white font-semibold py-3 px-6 rounded-full transition-all"
             >
-              <span className="bg-[#0A2540] text-white p-1.5 rounded-full group-hover:bg-white group-hover:text-[#00AAA5] transition-all">
+              <span className="bg-white text-[#00AAA5] p-1.5 rounded-full">
                 <ArrowRight size={16} />
               </span>
               <span className="text-sm">View All Capabilities</span>
@@ -70,25 +69,25 @@ const Capabilities = () => {
 
             {/* Overlay List */}
             <div className="absolute bottom-0 left-0 z-10 w-full md:w-[400px]">
-              <div className="bg-white/90 backdrop-blur-md rounded-r-2xl py-2 shadow-lg border-y border-r border-white/20">
+              <div className="bg-white/80 backdrop-blur-lg rounded-tr-2xl py-2 shadow-lg border-y border-r border-white/20">
                 <div className="flex flex-col">
                   {capabilities.map((capability, index) => (
                     <Link
                       key={index}
                       href={capability.href}
-                      className="group flex items-center justify-between py-3 px-8 transition-all duration-300 hover:bg-white/50"
+                      className="group flex items-center justify-between py-4 px-8 border-b border-gray-200 transition-all duration-300 hover:border-secondary"
                     >
-                      <span className="font-semibold text-gray-900 group-hover:underline decoration-2 underline-offset-4">
+                      <span className="font-semibold text-gray-900 group-hover:text-secondary transition-colors duration-300">
                         {capability.name}
                       </span>
-                      <div className="relative w-5 h-5 flex items-center justify-center">
+                      <div className="relative w-5 h-5 flex items-center justify-center text-gray-900 group-hover:text-secondary transition-colors duration-300">
                         <ArrowUpRight
                           size={20}
-                          className="absolute transition-all duration-300 opacity-100 rotate-0 scale-100 group-hover:opacity-0 group-hover:rotate-45 group-hover:scale-0 text-gray-900"
+                          className="absolute transition-all duration-300 opacity-100 rotate-0 scale-100 group-hover:opacity-0 group-hover:rotate-45 group-hover:scale-0"
                         />
                         <ArrowRight
                           size={20}
-                          className="absolute transition-all duration-300 opacity-0 -rotate-45 scale-0 group-hover:opacity-100 group-hover:rotate-0 group-hover:scale-100 text-gray-900"
+                          className="absolute transition-all duration-300 opacity-0 -rotate-45 scale-0 group-hover:opacity-100 group-hover:rotate-0 group-hover:scale-100"
                         />
                       </div>
                     </Link>

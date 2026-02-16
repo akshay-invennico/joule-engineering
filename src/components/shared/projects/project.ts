@@ -1,5 +1,5 @@
-import project1 from '../../../../public/assets/projects/projects1.png';
-import project2 from '../../../../public/assets/projects/projects2.png';
+import project1 from '../../../../public/assets/projects/project1.png';
+import project2 from '../../../../public/assets/projects/project2.png';
 
 import { StaticImageData } from 'next/image';
 

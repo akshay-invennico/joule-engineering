@@ -10,10 +10,9 @@ const TestimonialSection = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <section className="py-20 bg-linear-to-r from-[#072E4D] to-[#0A1A2F] relative overflow-hidden">
+    <section className="py-20 bg-linear-to-r from-primary to-[#0A1A2F] relative overflow-hidden">
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
-          {/* Quote Icon */}
           <div className="flex justify-center mb-8">
             <Image src={quote} alt="Quote" width={82} height={74} />
           </div>
@@ -39,7 +38,6 @@ const TestimonialSection = () => {
           <div className="border-t border-gray-700 w-full mb-8"></div>
 
           <div className="flex flex-col md:flex-row justify-between items-center gap-8">
-            {/* Author Info */}
             <AnimatePresence mode="wait">
               <motion.div
                 key={activeIndex}
@@ -58,7 +56,6 @@ const TestimonialSection = () => {
               </motion.div>
             </AnimatePresence>
 
-            {/* Avatar Selector */}
             <div className="flex -space-x-3">
               {testimonials.map((testimonial, index) => (
                 <button

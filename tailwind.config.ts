@@ -8,14 +8,17 @@ const config: Config = {
     ],
     theme: {
         extend: {
+            fontFamily: {
+                play: ["Play", "sans-serif"],
+            },
             colors: {
                 primary: {
-                    DEFAULT: "#00AAA5",
+                    DEFAULT: "#0063A2",
                     light: "#33B9EE",
                     dark: "#007BB5",
                 },
                 secondary: {
-                    DEFAULT: "#1D1D1B",
+                    DEFAULT: "#00AAA5",
                     light: "#3C3C3A",
                     dark: "#000000",
                 },

@@ -23,7 +23,7 @@ export const blogsData: Blog[] = [
     title: 'Smart Home Devices Revolutionizing Everyday Life.',
     category: 'Consumer',
     date: '15 Sep, 2025',
-    image: 'https://images.unsplash.com/photo-1558002038-1091a1661116?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&q=80',
     linkText: 'Explore now',
   },
   {

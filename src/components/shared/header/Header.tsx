@@ -13,7 +13,6 @@ const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-  // Handle scroll effect
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
@@ -22,7 +21,6 @@ const Header = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Navigation Items
   const navItems = [
     { label: 'CAPABILITIES', href: '/capabilities', hasDropdown: true },
     { label: 'PROJECTS', href: '/projects', hasDropdown: true },
@@ -34,13 +32,12 @@ const Header = () => {
   return (
     <header
       className={`w-full z-40 transition-all duration-300 ${isHome && !isScrolled
-        ? 'bg-transparent absolute top-[40px] left-0 right-0 border-b border-gray-600/30'
-        : 'bg-white shadow-md sticky top-0 text-gray-800'
+          ? 'bg-transparent absolute top-[40px] left-0 right-0 border-b border-gray-600/30'
+          : 'bg-white shadow-md sticky top-[36px] text-gray-800'
         }`}
     >
       <div className="container mx-auto px-4 lg:px-8">
         <div className="flex justify-between items-center h-20">
-          {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
             <Image
               src={logo}
@@ -52,7 +49,6 @@ const Header = () => {
             />
           </Link>
 
-          {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center gap-8">
             {navItems.map((item) => (
               <div key={item.label} className="relative group cursor-pointer">
@@ -70,7 +66,6 @@ const Header = () => {
             ))}
           </nav>
 
-          {/* CTA Button */}
           <div className="hidden lg:block">
             <Link
               href="/contact"
@@ -80,7 +75,6 @@ const Header = () => {
             </Link>
           </div>
 
-          {/* Mobile Menu Button */}
           <button
             className="lg:hidden text-gray-500 hover:text-primary transition-colors"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -94,7 +88,6 @@ const Header = () => {
         </div>
       </div>
 
-      {/* Mobile Menu */}
       {isMobileMenuOpen && (
         <div className="lg:hidden bg-white absolute top-full left-0 w-full shadow-lg border-t border-gray-100 py-4 px-4 flex flex-col gap-4 animate-in slide-in-from-top-2">
           {navItems.map((item) => (

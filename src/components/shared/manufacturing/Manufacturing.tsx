@@ -7,6 +7,7 @@ import setting from '../../../../public/icons/manufacturing/setting.svg'
 import crane from '../../../../public/icons/manufacturing/crane.svg'
 import workforce from '../../../../public/icons/manufacturing/workforce.svg'
 import Image from 'next/image';
+import SubHeading from '../subheading/SubHeading';
 
 const Manufacturing = () => {
   const features = [
@@ -43,20 +44,18 @@ const Manufacturing = () => {
   ];
 
   return (
-    <section className="py-16 md:py-24 bg-white overflow-hidden">
+    <section className="py-16 md:py-[100px] bg-white overflow-hidden">
       <div className="container mx-auto px-4 lg:px-8">
 
         {/* Header Section */}
-        <div className="mb-14">
+        <div className="mb-10">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 md:gap-12">
             <div className="max-w-3xl">
-              <span className="block text-[#00AAA5] text-sm font-bold tracking-wider uppercase mb-3 text-center md:text-left">
-                Manufacturing & Infrastructure
-              </span>
-              <h2 className="text-[#0A2540] text-3xl md:text-4xl lg:text-[42px] font-bold leading-tight mb-6 text-center md:text-left">
+              <SubHeading text="Manufacturing & Infrastructure" className='mb-3' color='#00AAA5' />
+              <h2 className="text-[#0A2540] text-3xl md:text-4xl lg:text-[36px] font-bold leading-tight mb-5 text-center md:text-left">
                 Manufacturing Strength &<br /> Infrastructure
               </h2>
-              <p className="text-gray-500 text-sm md:text-base leading-relaxed max-w-2xl text-center md:text-left">
+              <p className="text-[#808080] text-sm md:text-base leading-relaxed max-w-2xl text-center md:text-left">
                 Our manufacturing facility is equipped to handle heavy, complex, and high-precision fabrication work.
               </p>
             </div>
@@ -64,10 +63,10 @@ const Manufacturing = () => {
             <div className="flex justify-center md:justify-end shrink-0 mb-2 md:mb-0">
               <Link
                 href="/infrastructure"
-                className="group flex items-center gap-2 text-[#0A2540] font-bold text-sm hover:text-[#00AAA5] transition-colors"
+                className="group flex items-center gap-2 text-primary font-bold text-base"
                 aria-label="View Infrastructure"
               >
-                <div className="bg-[#0A2540] text-white p-2 rounded-full group-hover:bg-[#00AAA5] transition-colors">
+                <div className="bg-primary text-white p-2 rounded-full">
                   <ArrowRight size={18} />
                 </div>
                 <span>View Infrastructure</span>
@@ -77,13 +76,13 @@ const Manufacturing = () => {
         </div>
 
         {/* Grid Section */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5">
           {features.map((feature, index) => {
             const icons = feature.icon;
             return (
               <div
                 key={index}
-                className="group bg-white border border-gray-100 rounded-xl p-8 hover:shadow-xl transition-all duration-300 hover:border-[#00AAA5]/20 flex flex-col items-start gap-4"
+                className="group bg-white border border-gray-100 rounded-lg p-10 flex flex-col items-start"
               >
                 <div className="p-0">
                   <Image
@@ -91,15 +90,15 @@ const Manufacturing = () => {
                     width={52}
                     src={icons}
                     alt={feature.title}
-                    className="text-[#0A2540] group-hover:text-[#00AAA5] transition-colors"
+                    className="text-primary"
                   />
                 </div>
 
-                <h3 className="text-[#0A2540] text-xl font-bold group-hover:text-[#00AAA5] transition-colors">
+                <h3 className="text-xl mt-4 mb-3 font-bold">
                   {feature.title}
                 </h3>
 
-                <p className="text-gray-500 text-sm leading-relaxed">
+                <p className="text-[#808080] text-base leading-relaxed">
                   {feature.description}
                 </p>
               </div>

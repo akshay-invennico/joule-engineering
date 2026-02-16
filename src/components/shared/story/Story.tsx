@@ -10,6 +10,8 @@ import simem from '../../../../public/icons/simem.svg'
 import godrej from '../../../../public/icons/godrej.svg'
 import ITT from '../../../../public/icons/ITT.svg'
 import thermax from '../../../../public/icons/thermax.svg'
+import SubHeading from '../subheading/SubHeading';
+import Link from 'next/link';
 
 const Story = () => {
   const clientLogos = [
@@ -30,17 +32,15 @@ const Story = () => {
       <div className="container mx-auto px-4 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center mb-20">
           <div className="relative">
-            <div className="mb-6">
-              <span className="text-[#00AAA5] text-sm font-semibold tracking-wider uppercase">
-                Our Story
-              </span>
+            <div className="mb-3">
+              <SubHeading text="Our Story" />
             </div>
 
-            <h2 className="text-[#1E3A8A] text-3xl md:text-4xl lg:text-[42px] font-bold leading-tight mb-6">
+            <h2 className="text-[#0063A2] text-3xl md:text-4xl lg:text-[42px] font-bold leading-tight mb-6">
               Combining Engineering Industry, And Factory Expertise.
             </h2>
 
-            <div className="space-y-4 mb-8 text-gray-600 text-sm md:text-base leading-relaxed">
+            <div className="space-y-2 mb-5 text-[#808080] text-sm md:text-base leading-relaxed">
               <p>
                 We are a team of dedicated and experienced engineers who have been serving
                 clients in the fabrication and process equipment for industrial applications.
@@ -52,20 +52,42 @@ const Story = () => {
               </p>
             </div>
 
-            <button className="group flex items-center gap-3 bg-[#00AAA5] text-white font-semibold py-3 px-6 rounded-full transition-all hover:bg-[#008F8A] shadow-md hover:shadow-lg">
-              <span className="bg-white text-[#00AAA5] p-1.5 rounded-full group-hover:scale-110 transition-transform">
+            <Link
+              href="/capabilities"
+              className="group inline-flex items-center gap-3 text-white font-semibold rounded-full transition-all"
+            >
+              <span className="bg-[#0063A2] text-white p-1.5 rounded-full">
                 <ArrowRight size={16} />
               </span>
-              <span className="text-sm">Learn More About Us</span>
-            </button>
+              <span className="text-base text-[#0063A2]">Learn more about us</span>
 
-            <div className="absolute -bottom-8 left-0 lg:left-auto lg:-bottom-12 lg:-right-8">
-              <div className="relative w-24 h-24 md:w-28 md:h-28 lg:w-32 lg:h-32">
-                <div className="absolute inset-0 rounded-full border-2 border-dashed border-[#00AAA5] animate-spin-slow"></div>
-                <div className="absolute inset-2 rounded-full bg-white shadow-lg flex items-center justify-center">
-                  <div className="text-center">
-                    <div className="text-[#1E3A8A] font-bold text-lg md:text-xl">We</div>
-                    <div className="text-[#1E3A8A] font-bold text-lg md:text-xl">Lead</div>
+            </Link>
+
+            <div className="mt-20">
+              <div className="relative w-32 h-32 md:w-40 md:h-40 flex items-center justify-center border rounded-full border-[#233AFF33]">
+                <div className="absolute inset-0 animate-spin-slow">
+                  <svg viewBox="0 0 100 100" className="w-full h-full">
+                    <defs>
+                      <path
+                        id="circlePath"
+                        d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0"
+                      />
+                    </defs>
+                    <text fontSize="11.5" fontWeight="500" letterSpacing="2px" fill="#000000">
+                      <textPath xlinkHref="#circlePath" className="uppercase font-medium">
+                        Brand • Strategy • Design •
+                      </textPath>
+                    </text>
+                  </svg>
+                </div>
+
+                <div className="absolute w-16 h-16 md:w-20 md:h-20 rounded-full border border-[#233AFF33] flex items-center justify-center bg-white">
+                  <div className="flex flex-col items-center justify-center text-[#0063A2]">
+                    <div className="w-2 h-2 bg-[#0063A2] rounded-full mb-1"></div>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M12 5v14" />
+                      <path d="M19 12l-7 7-7-7" />
+                    </svg>
                   </div>
                 </div>
               </div>
@@ -84,8 +106,8 @@ const Story = () => {
               </div>
             </div>
 
-            <div className="mt-6 text-center lg:text-left">
-              <p className="text-gray-600 text-sm leading-relaxed">
+            <div className="mt-[38px] text-center lg:text-left">
+              <p className="text-[#808080] text-base leading-relaxed">
                 Our work is defined by unwavering reliability, unrivaled expertise, adherence to standards,
                 and a commitment to long-term client relationships.
               </p>
@@ -94,7 +116,7 @@ const Story = () => {
         </div>
 
         <div className="mt-24">
-          <h3 className="text-[#1E3A8A] text-2xl md:text-3xl font-bold text-left mb-12">
+          <h3 className="text-primary text-2xl md:text-3xl font-bold text-left mb-10">
             Trusted by Leading Industrial & EPC Organizations
           </h3>
 
@@ -114,7 +136,7 @@ const Story = () => {
           </div>
 
           <div className="text-center">
-            <button className="inline-flex items-center gap-2 text-[#00AAA5] font-semibold text-sm hover:gap-3 transition-all">
+            <button className="inline-flex items-center gap-2 text-primary font-semibold text-sm hover:gap-3 transition-all">
               <span>View All Clients</span>
               <ChevronRight size={18} />
             </button>

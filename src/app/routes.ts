@@ -1,4 +1,4 @@
-export default {
+const routes = {
     home: '/',
     products: '/products',
     productsSlug: '/products/id',
@@ -11,4 +11,6 @@ export default {
     contact: '/contact',
     faq: '/faq',
     newsAndInsights: '/news-insights',
-}
+};
+
+export default routes;

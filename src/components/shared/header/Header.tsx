@@ -22,9 +22,9 @@ const Header = () => {
   }, []);
 
   const navItems = [
-    { label: 'CAPABILITIES', href: '/capabilities', hasDropdown: true },
-    { label: 'PROJECTS', href: '/projects', hasDropdown: true },
-    { label: 'INFRASTRUCTURE', href: '/infrastructure', hasDropdown: true },
+    { label: 'CAPABILITIES', href: '/capabilities', hasDropdown: false },
+    { label: 'PROJECTS', href: '/projects', hasDropdown: false },
+    { label: 'INFRASTRUCTURE', href: '/infrastructure', hasDropdown: false },
     { label: 'CLIENTS', href: '/clients', hasDropdown: false },
     { label: 'COMPANY', href: '/company', hasDropdown: true },
   ];
@@ -32,8 +32,8 @@ const Header = () => {
   return (
     <header
       className={`w-full z-40 transition-all duration-300 ${isHome && !isScrolled
-          ? 'bg-transparent absolute top-[40px] left-0 right-0 border-b border-gray-600/30'
-          : 'bg-white shadow-md sticky top-[36px] text-gray-800'
+        ? 'bg-transparent absolute top-[40px] left-0 right-0 border-b border-[#E4E4E4]'
+        : 'bg-white sticky top-[36px] text-gray-800 border-b border-[#E4E4E4]'
         }`}
     >
       <div className="container mx-auto px-4 lg:px-8">

@@ -12,7 +12,7 @@ interface ProjectCardProps {
 
 const Card: React.FC<ProjectCardProps> = ({ title, client, category, image, slug }) => {
   return (
-    <Link href={`/projects/${slug}`} className="block group relative w-full h-[400px] rounded-lg overflow-hidden cursor-pointer">
+    <Link href={`/${slug}`} className="block group relative w-full h-[400px] rounded-lg overflow-hidden cursor-pointer">
       <Image
         src={image}
         alt={title}

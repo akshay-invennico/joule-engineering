@@ -5,6 +5,7 @@ import Carousel from './Carousel';
 import { projectData } from '@/components/shared/projects/projectData';
 import ProjectInfo from '@/components/shared/projects/ProjectInfo';
 import FaqSection from '@/components/shared/faq/FaqSection';
+import CtaSection from '@/components/shared/Cta/CtaSection';
 
 interface PageProps {
   params: Promise<{
@@ -44,6 +45,7 @@ const Page = async ({ params }: PageProps) => {
         materialsCompliance={project.materialsCompliance}
       />
       <FaqSection />
+      <CtaSection />
     </main>
   );
 };

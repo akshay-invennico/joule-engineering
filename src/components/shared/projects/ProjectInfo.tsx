@@ -82,6 +82,8 @@ const ProjectInfo: React.FC<ProjectInfoProps> = ({
           )}
         </div>
       </div>
+
+      <div className='container mx-auto px-4 lg:px-8 h-px w-full bg-[#E4E4E4]'></div>
     </section>
   );
 };

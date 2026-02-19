@@ -3,7 +3,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { ArrowRight } from 'lucide-react';
-import story from '../../../public/assets/facility.png'
+import story from '../../../public/assets/infrastructure/infra2.png'
 import SubHeading from '@/components/shared/subheading/SubHeading';
 import Link from 'next/link';
 
@@ -20,7 +20,7 @@ const Capability = () => {
                   src={story}
                   alt="Engineering Team"
                   fill
-                  className="object-cover"
+                  className=""
                 />
               </div>
             </div>

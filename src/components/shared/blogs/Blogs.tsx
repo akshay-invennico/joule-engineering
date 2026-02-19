@@ -2,7 +2,6 @@
 
 import React, { useState } from 'react';
 import Image from 'next/image';
-import { motion } from 'framer-motion';
 import { ArrowRight, ArrowLeft } from 'lucide-react';
 import { blogsData } from './blogsData';
 import SubHeading from '../subheading/SubHeading';
@@ -20,7 +19,6 @@ const Blogs = () => {
   return (
     <section className="py-20 bg-white">
       <div className="container mx-auto px-4 lg:px-8">
-        {/* Header */}
         <div className="flex flex-col md:flex-row justify-between items-end mb-10 gap-6">
           <div className="max-w-xl">
             <SubHeading text="Our Blog & Article" className='mb-3' color='#00AAA5' />
@@ -29,7 +27,6 @@ const Blogs = () => {
             </h2>
           </div>
 
-          {/* Controls */}
           <div className="flex justify-end gap-3 mt-8">
             <button
               onClick={prev}
@@ -48,18 +45,9 @@ const Blogs = () => {
           </div>
         </div>
 
-        {/* Blog Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
-          {blogsData.map((blog, index) => (
-            <motion.div
-              key={blog.id}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              viewport={{ once: true }}
-              className="group cursor-pointer"
-            >
-              {/* Image Container */}
+          {blogsData.slice(0, 4).map((blog, index) => (
+            <div key={index} className="group cursor-pointer">
               <div className="relative h-64 w-full mb-6 rounded-xl overflow-hidden">
                 <Image
                   src={blog.image}
@@ -68,7 +56,6 @@ const Blogs = () => {
                   className="object-cover"
                 />
 
-                {/* Date & Category Overlay */}
                 <div className="absolute bottom-0 left-0 bg-white/90 backdrop-blur-sm px-4 py-2 flex items-center gap-4 text-xs font-semibold text-[#808080]">
                   <span>{blog.date}</span>
                   <span className="w-px h-3 bg-gray-300"></span>
@@ -76,7 +63,6 @@ const Blogs = () => {
                 </div>
               </div>
 
-              {/* Content */}
               <div className="pr-4">
                 <h3 className="text-xl font-bold text-[#808080] mb-3 line-clamp-2">
                   {blog.title}
@@ -86,7 +72,7 @@ const Blogs = () => {
                   <ArrowRight size={16} className="transition-transform duration-300 group-hover/link:translate-x-1" />
                 </div>
               </div>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>

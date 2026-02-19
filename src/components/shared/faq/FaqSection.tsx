@@ -1,10 +1,31 @@
 'use client';
 
 import React, { useState } from 'react';
-import { data } from './faqData';
+import { data as defaultData } from './faqData';
 import { Plus, Minus } from 'lucide-react';
 
-const FaqSection = () => {
+interface FaqItem {
+  question: string;
+  answer: string;
+  category?: string;
+}
+
+interface FaqSectionProps {
+  items?: FaqItem[];
+  showTitle?: boolean;
+  title?: string;
+  activeCategory?: string;
+  showActiveCategory?: boolean;
+}
+
+const FaqSection: React.FC<FaqSectionProps> = ({
+  items,
+  showTitle = true,
+  title = 'Frequently Asked Questions',
+  activeCategory,
+  showActiveCategory = false,
+}) => {
+  const faqItems = items || defaultData;
   const [activeIndex, setActiveIndex] = useState<number | null>(0);
 
   const toggleAccordion = (index: number) => {
@@ -14,14 +35,25 @@ const FaqSection = () => {
   return (
     <section className="py-16 md:py-24 bg-white">
       <div className="container mx-auto px-4 lg:px-8 max-w-[1000px]">
-        <div className="text-center mb-10">
-          <h2 className="text-primary text-3xl md:text-4xl lg:text-[36px] font-bold">
-            Frequently Asked Questions
-          </h2>
-        </div>
+
+        {showTitle && (
+          <div className="text-center mb-10">
+            <h2 className="text-primary text-3xl md:text-4xl lg:text-[36px] font-bold">
+              {title}
+            </h2>
+          </div>
+        )}
+
+        {showActiveCategory && (
+          <div className="text-start mb-6">
+            <h2 className="text-primary text-3xl md:text-4xl lg:text-[24px] font-bold">
+              {activeCategory}
+            </h2>
+          </div>
+        )}
 
         <div className="space-y-4">
-          {data.map((item, index) => {
+          {faqItems.map((item, index) => {
             const isOpen = activeIndex === index;
             return (
               <div
@@ -31,7 +63,7 @@ const FaqSection = () => {
               >
                 <button
                   onClick={() => toggleAccordion(index)}
-                  className="w-full flex items-start justify-between px-6 pt-6 pb-3 text-left focus:outline-none cursor-pointer"
+                  className="w-full flex items-start justify-between px-6 pt-6 pb-3 text-left cursor-pointer"
                 >
                   <div className="flex gap-2 items-center">
                     <span className="text-black font-bold text-lg min-w-[30px]">
@@ -41,6 +73,7 @@ const FaqSection = () => {
                       {item.question}
                     </span>
                   </div>
+
                   <div className="ml-4 mt-1 text-primary shrink-0">
                     {isOpen ? (
                       <Minus className="w-6 h-6" />
@@ -51,7 +84,9 @@ const FaqSection = () => {
                 </button>
 
                 <div
-                  className={`grid transition-all duration-300 ease-in-out ${isOpen ? 'grid-rows-[1fr] opacity-100 pb-6' : 'grid-rows-[0fr] opacity-0 pb-0'
+                  className={`grid transition-all duration-300 ease-in-out ${isOpen
+                    ? 'grid-rows-[1fr] opacity-100 pb-6'
+                    : 'grid-rows-[0fr] opacity-0 pb-0'
                     }`}
                 >
                   <div className="overflow-hidden px-6 pr-12">

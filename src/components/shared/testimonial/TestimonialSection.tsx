@@ -61,7 +61,7 @@ const TestimonialSection = () => {
                 <button
                   key={testimonial.id}
                   onClick={() => setActiveIndex(index)}
-                  className={`relative w-12 h-12 rounded-full overflow-hidden border-2 transition-all duration-300 ${index === activeIndex
+                  className={`relative w-12 h-12 rounded-full overflow-hidden border-2 transition-all duration-300 cursor-pointer ${index === activeIndex
                     ? 'border-[#00AAA5] scale-110 z-10'
                     : 'border-transparent z-0 opacity-50 hover:opacity-100 hover:scale-105'
                     }`}

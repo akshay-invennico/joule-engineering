@@ -1,16 +1,16 @@
 const routes = {
     home: '/',
-    products: '/products',
-    productsSlug: '/products/id',
-    industries: '/industries',
     about: '/about',
-    careers: '/careers',
-    careersSlug: '/careers/id',
-    privacyPolicy: 'privacy-policy',
-    termsAndConditions: '/terms-and-conditions',
     contact: '/contact',
     faq: '/faq',
-    newsAndInsights: '/news-insights',
+    projects: '/projects',
+    clients: '/clients',
+    capabilites: '/capabilites',
+    infrastructure: '/infrastructure',
+    products: '/products',
+    blogs: '/blogs',
+    privacyPolicy: '/privacy-policy',
+    termsAndConditions: '/terms-and-conditions',
 };
 
 export default routes;

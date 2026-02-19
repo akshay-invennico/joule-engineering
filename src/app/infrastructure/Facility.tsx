@@ -2,31 +2,12 @@
 
 import React from 'react';
 import Image from 'next/image';
-import { ArrowRight, ChevronRight } from 'lucide-react';
-import story from '../../../public/assets/facility.png'
-
-import lt from '../../../public/icons/L&T.svg'
-import simem from '../../../public/icons/simem.svg'
-import godrej from '../../../public/icons/godrej.svg'
-import ITT from '../../../public/icons/ITT.svg'
-import thermax from '../../../public/icons/thermax.svg'
+import { ArrowRight } from 'lucide-react';
+import story from '../../../public/assets/infrastructure/infra1.png'
 import SubHeading from '@/components/shared/subheading/SubHeading';
 import Link from 'next/link';
 
 const Facility = () => {
-  const clientLogos = [
-    { name: 'Larsen & Toubro', logo: lt },
-    { name: 'Simem', logo: simem },
-    { name: 'Godrej', logo: godrej },
-    { name: 'ITT', logo: ITT },
-    { name: 'Thermax', logo: thermax },
-    { name: 'Larsen & Toubro', logo: lt },
-    { name: 'Simem', logo: simem },
-    { name: 'Godrej', logo: godrej },
-    { name: 'ITT', logo: ITT },
-    { name: 'Thermax', logo: thermax },
-  ];
-
   return (
     <section className="w-full bg-white py-16 md:py-24">
       <div className="container mx-auto px-4 lg:px-8">
@@ -62,13 +43,13 @@ const Facility = () => {
           </div>
 
           <div className="relative mt-12 lg:mt-0">
-            <div className="relative rounded-3xl overflow-hidden">
+            <div className="relative">
               <div className="relative w-full aspect-4/5">
                 <Image
                   src={story}
                   alt="Engineering Team"
                   fill
-                  className="object-cover"
+                  className=""
                 />
               </div>
             </div>

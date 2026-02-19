@@ -2,7 +2,6 @@
 
 import React from 'react';
 import Image from 'next/image';
-import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
 import capabilitiesImg from '../../../../public/assets/capabilities-img.png';
 import SubHeading from '../subheading/SubHeading';
@@ -26,14 +25,7 @@ const LeadForm = () => {
         <div className="bg-[#F3F5FF] rounded-3xl p-5">
           <div className="flex flex-col lg:flex-row gap-12 items-stretch">
 
-            {/* Image Section */}
-            <motion.div
-              initial={{ opacity: 0, x: -50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6 }}
-              viewport={{ once: true }}
-              className="w-full lg:w-1/2 relative min-h-[400px] lg:min-h-full rounded-2xl overflow-hidden"
-            >
+            <div className="w-full lg:w-1/2 relative min-h-[400px] lg:min-h-full rounded-2xl overflow-hidden">
               <Image
                 src={capabilitiesImg}
                 alt="Engineering worker"
@@ -41,16 +33,9 @@ const LeadForm = () => {
                 className="object-cover"
               />
               <div className="absolute inset-0 bg-blue-900/10 mix-blend-multiply"></div>
-            </motion.div>
+            </div>
 
-            {/* Form Section */}
-            <motion.div
-              initial={{ opacity: 0, x: 50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              viewport={{ once: true }}
-              className="w-full lg:w-1/2 flex flex-col justify-center"
-            >
+            <div className="w-full lg:w-1/2 flex flex-col justify-center">
               <form className="space-y-5 py-6">
 
                 <div className="grid grid-cols-1 gap-6">
@@ -145,7 +130,7 @@ const LeadForm = () => {
                   Submit Now
                 </button>
               </form>
-            </motion.div>
+            </div>
           </div>
         </div>
       </div>

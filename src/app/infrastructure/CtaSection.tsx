@@ -4,11 +4,11 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
-import ctaBg from '../../../public/assets/ctaImage.png';
+import ctaBg from '../../../public/assets/infrastructure/infra3.png';
 
 const CtaSection = () => {
   return (
-    <section className="relative w-full h-[420px] sm:h-[480px] md:h-[520px] lg:h-[560px] overflow-hidden">
+    <section className="relative w-full h-[420px] sm:h-[480px] md:h-[520px] lg:h-[860px] overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0 w-full h-full z-0">
         <Image
@@ -19,7 +19,7 @@ const CtaSection = () => {
           priority
         />
         {/* Dark Overlay */}
-        <div className="absolute inset-0 bg-black/55" />
+        <div className="absolute inset-0 bg-black/70" />
       </div>
 
       {/* Content - bottom left aligned */}

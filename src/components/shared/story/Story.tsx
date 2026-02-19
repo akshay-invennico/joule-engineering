@@ -124,7 +124,7 @@ const Story = () => {
             {clientLogos.map((client, index) => (
               <div
                 key={index}
-                className="relative grayscale hover:grayscale-0 transition-all duration-300 opacity-60 hover:opacity-100"
+                className="relative grayscale"
               >
                 <Image
                   src={client.logo}

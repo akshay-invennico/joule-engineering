@@ -4,7 +4,7 @@ import nodemailer from "nodemailer";
 export async function POST(req: Request) {
   try {
     const body = await req.json();
-    const { fullName, company, email, phone, inquiryType, message } = body;
+    const { fullName, email, phone, subject, message } = body;
 
     const transporter = nodemailer.createTransport({
       service: "gmail",
@@ -15,16 +15,23 @@ export async function POST(req: Request) {
     });
 
     const mailOptions = {
-      from: `"Lead Form" <devinvennico@gmail.com>`,
+      from: `"Lead Form" <${process.env.EMAIL}>`,
       to: process.env.EMAIL,
-      subject: `New Lead: ${inquiryType}`,
+      subject: `New Lead: ${subject || "No Subject"}`,
       text: `
         Full Name: ${fullName}
-        Company: ${company}
         Email: ${email}
         Phone: ${phone || "Not provided"}
-        Inquiry Type: ${inquiryType}
+        Subject: ${subject}
         Message: ${message}
+      `,
+      html: `
+        <h3>New Lead Submission</h3>
+        <p><strong>Full Name:</strong> ${fullName}</p>
+        <p><strong>Email:</strong> ${email}</p>
+        <p><strong>Phone:</strong> ${phone || "Not provided"}</p>
+        <p><strong>Subject:</strong> ${subject}</p>
+        <p><strong>Message:</strong> ${message}</p>
       `,
     };
 

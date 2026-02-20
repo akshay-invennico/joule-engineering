@@ -5,7 +5,7 @@ const routes = {
     faq: '/faq',
     projects: '/projects',
     clients: '/clients',
-    capabilites: '/capabilites',
+    capabilites: '/capabilities',
     infrastructure: '/infrastructure',
     products: '/products',
     blogs: '/blogs',

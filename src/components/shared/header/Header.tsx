@@ -6,6 +6,7 @@ import { usePathname } from 'next/navigation';
 import { Menu, X, ChevronDown } from 'lucide-react';
 import Image from 'next/image';
 import logo from '../../../../public/assets/logo.png';
+import logo2 from '../../../../public/assets/logo2.png';
 import routes from '@/app/routes';
 
 const Header = () => {
@@ -50,7 +51,7 @@ const Header = () => {
         <div className="flex justify-between items-center h-20">
           <Link href="/" className="flex items-center gap-2">
             <Image
-              src={logo}
+              src={isHome && !isScrolled ? logo : logo2}
               height={44}
               width={135}
               alt="Industrial Engineering Background"
@@ -73,7 +74,7 @@ const Header = () => {
                   {item.hasDropdown && <ChevronDown size={14} />}
                 </Link>
                 {item.hasDropdown && (
-                  <div className="absolute top-full left-0 mt-4 w-64 bg-white rounded-xl border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                  <div className="absolute top-full left-0 mt-4 w-64 bg-white rounded-lg border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
                     <div className="py-3">
                       {companyDropdown.map((subItem, index) => (
                         <Link

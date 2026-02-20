@@ -24,7 +24,7 @@ const Hero = () => {
           <source src="/assets/hero-video.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-        <div className="absolute inset-0 bg-black/60" />
+        <div className="absolute inset-0 bg-black/40" />
       </div>
 
       <div className="relative z-20 container mx-auto px-4 lg:px-8 flex flex-col items-start justify-center h-full pt-20">
@@ -39,12 +39,12 @@ const Hero = () => {
 
           <Link
             href="/capabilities"
-            className="group inline-flex items-center gap-3 text-white font-semibold rounded-full transition-all"
+            className="group inline-flex items-center gap-2.5 text-white font-semibold rounded-full transition-all"
           >
-            <span className="bg-[#0A2540] text-white p-1.5 rounded-full group-hover:bg-white group-hover:text-[#00AAA5] transition-all">
-              <ArrowRight size={16} />
+            <span className="bg-white text-[#00AAA5] p-3.5 rounded-full">
+              <ArrowRight size={18} />
             </span>
-            <span className="text-sm">Discuss Your Requirement</span>
+            <span className="text-lg">Discuss Your Requirement</span>
 
           </Link>
         </div>
@@ -52,11 +52,11 @@ const Hero = () => {
 
       <div className="absolute bottom-0 left-0 w-full z-20">
         <div className="container mx-auto px-4 lg:px-8 py-6">
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 text-center lg:text-left">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-[54px] text-center lg:text-left">
             {stats.map((stat, index) => (
               <div key={index} className="flex flex-col items-center lg:items-start">
-                <span className="text-white text-3xl md:text-4xl font-bold mb-1">{stat.value}</span>
-                <span className="text-gray-300 text-xs md:text-sm">{stat.label}</span>
+                <span className="text-white text-3xl md:text-[32px] font-bold mb-1">{stat.value}</span>
+                <span className="text-white text-xs md:text-sm">{stat.label}</span>
               </div>
             ))}
           </div>

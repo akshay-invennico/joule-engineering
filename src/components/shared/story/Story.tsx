@@ -12,6 +12,7 @@ import ITT from '../../../../public/icons/ITT.svg'
 import thermax from '../../../../public/icons/thermax.svg'
 import SubHeading from '../subheading/SubHeading';
 import Link from 'next/link';
+import routes from '@/app/routes';
 
 const Story = () => {
   const clientLogos = [
@@ -136,10 +137,10 @@ const Story = () => {
           </div>
 
           <div className="text-center">
-            <button className="inline-flex items-center gap-2 text-primary font-semibold text-sm hover:gap-3 transition-all">
+            <Link href={routes.clients} className="inline-flex items-center gap-2 text-primary font-semibold text-sm hover:gap-3 transition-all">
               <span>View All Clients</span>
               <ChevronRight size={18} />
-            </button>
+            </Link>
           </div>
         </div>
       </div>

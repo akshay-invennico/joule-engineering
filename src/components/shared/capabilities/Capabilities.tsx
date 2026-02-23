@@ -10,12 +10,11 @@ import SubHeading from '../subheading/SubHeading';
 
 const Capabilities = () => {
   const capabilities = [
-    { name: 'Process Design', href: '/capabilities/process-design' },
-    { name: 'Fabrication Detailing', href: '/capabilities/fabrication-detailing' },
-    { name: 'Material Compliance', href: '/capabilities/material-compliance' },
-    { name: 'Vessel Engineering', href: '/capabilities/vessel-engineering' },
-    { name: 'Inspection Coordination', href: '/capabilities/inspection-coordination' },
-    { name: 'Quality Documentation', href: '/capabilities/quality-documentation' },
+    { name: 'Chemical Mixing Vessel – 4 KL', href: '/chemical-mixing-vessel-4kl' },
+    { name: 'Storage Vessel', href: '/storage-vessel' },
+    { name: 'Vacuum Vessel', href: '/vacuum-vessel' },
+    { name: 'Industrial Frame Structure', href: '/industrial-frame-structure' },
+    { name: 'Heat Exchanger Shell', href: '/heat-exchanger-shell' },
   ];
 
   return (

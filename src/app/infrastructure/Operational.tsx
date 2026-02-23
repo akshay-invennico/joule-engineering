@@ -6,6 +6,7 @@ import operational1 from "../../../public/assets/infrastructure/operational1.jpg
 import operational2 from "../../../public/assets/infrastructure/operational2.jpg";
 import operational3 from "../../../public/assets/infrastructure/operational3.jpg";
 import operational4 from "../../../public/assets/infrastructure/operational4.jpg";
+import { ArrowLeft, ArrowRight, CircleX, Cross, Plus } from "lucide-react";
 
 const data = [
   {
@@ -79,18 +80,20 @@ export default function Operational() {
           </h2>
         </div>
 
-        <div className="flex gap-3">
+        <div className="flex justify-end gap-3 mt-8">
           <button
             onClick={prev}
-            className="w-11 h-11 rounded-full border border-gray-300 bg-white hover:bg-[#0F2B46] hover:text-white transition"
+            disabled={index === 0}
+            className="w-[58px] h-[40px] px-5 py-2 rounded-full border border-[#E4E4E4] flex items-center justify-center text-[#808080] disabled:opacity-50 cursor-pointer"
           >
-            ←
+            <ArrowLeft size={20} />
           </button>
           <button
             onClick={next}
-            className="w-11 h-11 rounded-full border border-gray-300 bg-white hover:bg-[#0F2B46] hover:text-white transition"
+            disabled={index >= data.length - 1}
+            className="w-[58px] h-[40px] px-5 py-2 rounded-full border border-primary flex items-center justify-center text-primary disabled:opacity-50 cursor-pointer"
           >
-            →
+            <ArrowRight size={20} />
           </button>
         </div>
       </div>
@@ -118,17 +121,19 @@ export default function Operational() {
 
               <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/40 to-transparent" />
 
-              <button
-                onClick={() => toggleCard(i)}
-                className="absolute right-5 top-1/2 -translate-y-1/2 w-10 h-10 bg-white text-black rounded-full flex items-center justify-center shadow-md z-10 transition hover:scale-110"
-              >
-                {activeCard === i ? "×" : "+"}
-              </button>
+
 
               <div className="absolute bottom-0 p-6 text-white z-10">
-                <h3 className="text-lg font-semibold mb-3 max-w-md">
+                <h3 className="text-lg font-semibold mb-3 max-w-[60%]">
                   {item.title}
                 </h3>
+
+                <button
+                  onClick={() => toggleCard(i)}
+                  className="absolute right-5 top-1/2 -translate-y-1/2 w-10 h-10 bg-white text-black rounded-full flex items-center justify-center shadow-md z-10 transition hover:scale-110 cursor-pointer"
+                >
+                  {activeCard === i ? <CircleX size={20} color="#0063A2" /> : <Plus size={20} color="#0063A2" />}
+                </button>
 
                 <div
                   className={`transition-all duration-500 overflow-hidden ${activeCard === i

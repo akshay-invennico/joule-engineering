@@ -45,8 +45,8 @@ const Capability = () => {
               href="/capabilities"
               className="group inline-flex items-center gap-3 text-white font-semibold rounded-full transition-all"
             >
-              <span className="bg-primary text-white p-1.5 rounded-full">
-                <ArrowRight size={16} />
+              <span className="bg-primary text-white p-3.5 rounded-full">
+                <ArrowRight size={18} />
               </span>
               <span className="text-base text-primary">Discuss Your Infrastructure Requirements</span>
 

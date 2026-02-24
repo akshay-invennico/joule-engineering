@@ -1,4 +1,4 @@
-"use client";
+'use client';
 
 import SubHeading from "@/components/shared/subheading/SubHeading";
 import { useEffect, useState } from "react";
@@ -52,7 +52,7 @@ export default function Operational() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  const maxIndex = data.length - perView;
+  const maxIndex = data.length - 1;
 
   const next = () => {
     if (index < maxIndex) setIndex(index + 1);
@@ -90,7 +90,7 @@ export default function Operational() {
           </button>
           <button
             onClick={next}
-            disabled={index >= data.length - 1}
+            disabled={index >= maxIndex}
             className="w-[58px] h-[40px] px-5 py-2 rounded-full border border-primary flex items-center justify-center text-primary disabled:opacity-50 cursor-pointer"
           >
             <ArrowRight size={20} />
@@ -100,15 +100,15 @@ export default function Operational() {
 
       <div className="relative w-full overflow-hidden">
         <div
-          className="flex transition-transform duration-700 ease-in-out"
+          className="flex gap-6 transition-transform duration-700 ease-in-out"
           style={{
-            transform: `translateX(-${(100 / perView) * index}%)`,
+            transform: `translateX(-${index * (100 / perView)}%)`,
           }}
         >
           {data.map((item, i) => (
             <div
               key={i}
-              className="relative rounded-xl overflow-hidden mr-6 shrink-0 group"
+              className="relative rounded-xl overflow-hidden shrink-0 group"
               style={{
                 width: `${100 / perView}%`,
                 height: "420px",

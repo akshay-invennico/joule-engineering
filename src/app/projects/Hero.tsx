@@ -28,7 +28,7 @@ const Hero = () => {
         <div className="max-w-4xl pt-10">
           <Breadcrumb items={breadcrumbItems} textColor="white" linkColor="white" />
 
-          <h1 className="text-4xl md:text-5xl lg:text-[44px] font-bold mb-5 leading-tight uppercase tracking-wide">
+          <h1 className="text-4xl md:text-5xl lg:text-[44px] font-bold mb-5 leading-tight tracking-wide">
             Executed Projects
           </h1>
 

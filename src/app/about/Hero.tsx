@@ -1,6 +1,7 @@
-import Image from "next/image";
-import Link from "next/link";
-import heroImg from '../../../public/assets/about.jpg'
+import Image from 'next/image';
+import Link from 'next/link';
+import heroImg from '../../../public/assets/about.jpg';
+import { ArrowRight } from 'lucide-react';
 
 const stats = [
   { value: "20+", label: "Years of Fabrication Experience" },
@@ -62,12 +63,20 @@ const Hero = () => {
             <div className="mt-5">
               <Link
                 href="/about"
-                className="inline-flex items-center gap-3 text-primary font-medium"
+                className="group relative inline-flex items-center overflow-hidden rounded-full px-6"
               >
-                <span className="flex h-10 w-10 items-center justify-center rounded-full border border-blue-200">
-                  →
+                {/* Sliding Blue Background */}
+                <span className="absolute left-0 top-0 h-full w-0 bg-[#0E5A8A] transition-all duration-1000 ease-in-out group-hover:w-full"></span>
+
+                {/* Text */}
+                <span className="relative px-8 py-3 font-medium text-primary transition-colors duration-1500 group-hover:text-white">
+                  More About Us
                 </span>
-                <span>More About Us</span>
+
+                {/* Arrow Circle */}
+                <span className="absolute left-0 flex h-12 w-12 items-center justify-center rounded-full bg-[#0E5A8A] text-white transition-all duration-900 ease-in-out group-hover:left-full group-hover:-translate-x-full">
+                  <ArrowRight size={22} strokeWidth={2.5} />
+                </span>
               </Link>
             </div>
           </div>

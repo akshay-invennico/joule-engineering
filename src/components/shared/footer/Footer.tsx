@@ -153,7 +153,7 @@ const Footer = () => {
 
         <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-[#808080]">
           <p>© Joule Engineering Works. All rights reserved.</p>
-          <p>Designed & Developed by <a href="#" className="text-[#00AAA5] font-bold">Invennico Technolabs</a></p>
+          <p>Designed & Developed by <a href="https://www.invennico.com/" className="text-[#00AAA5] font-bold">Invennico Technolabs</a></p>
         </div>
 
       </div>

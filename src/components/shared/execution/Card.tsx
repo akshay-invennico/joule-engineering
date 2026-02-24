@@ -29,7 +29,7 @@ const Card: React.FC<CardProps> = ({ step, title, description }) => {
       </div>
 
       <div className="mt-4 space-y-3">
-        <h3 className="text-2xl font-bold leading-tight w-[80%]">
+        <h3 className="text-2xl font-bold leading-tight whitespace-nowrap">
           {title}
         </h3>
         <p className="text-[#808080]">

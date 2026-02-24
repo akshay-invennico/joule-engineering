@@ -30,7 +30,7 @@ const Projects = () => {
               className="mb-3"
               color="#00AAA5"
             />
-            <h2 className="text-[#0A2540] text-3xl md:text-4xl lg:text-[36px] font-bold leading-tight mb-5">
+            <h2 className="text-primary text-3xl md:text-4xl lg:text-[36px] font-bold leading-tight mb-5">
               Engineered For Success
             </h2>
             <p className="text-[#808080] text-sm md:text-base leading-relaxed max-w-2xl">
@@ -63,16 +63,19 @@ const Projects = () => {
         {/* Carousel */}
         <div className="relative overflow-hidden">
           <motion.div
-            className="flex gap-6"
-            animate={{
-              x: `calc(-${index} * (var(--slide-size) + 24px))`,
-            }}
-            transition={{ type: 'spring', stiffness: 300, damping: 30 }}
-          >
+  className="flex gap-6"
+  animate={{
+    x:
+      typeof window !== 'undefined' && window.innerWidth >= 768
+        ? `-${index * 50}%`
+        : `-${index * 100}%`,
+  }}
+  transition={{ type: 'spring', stiffness: 300, damping: 30 }}
+>
             {projects.map(project => (
               <div
                 key={project.id}
-                className="min-w-full md:min-w-[calc(50%-12px)] group flex items-stretch bg-white overflow-hidden cursor-pointer"
+                className="min-w-full md:min-w-1/2 group flex items-stretch bg-white overflow-hidden cursor-pointer"
               >
                 <div className="w-1/2 relative min-h-[380px]">
                   <div className="absolute inset-0 z-10">

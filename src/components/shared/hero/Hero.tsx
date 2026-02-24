@@ -19,7 +19,7 @@ const Hero = () => {
           loop
           muted
           playsInline
-          className="w-full h-full object-cover scale-110"
+          className="w-full h-full object-cover scale-150"
         >
           <source src="/assets/hero-video.mp4" type="video/mp4" />
           Your browser does not support the video tag.

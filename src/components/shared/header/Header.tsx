@@ -59,49 +59,53 @@ const Header = () => {
               priority
             />
           </Link>
-
-          <nav className="hidden lg:flex items-center gap-8">
-            {navItems.map((item) => (
-              <div key={item.label} className="relative group">
-                <Link
-                  href={item.href}
-                  className={`flex items-center gap-1 text-sm font-semibold tracking-wide transition-colors ${isHome && !isScrolled
-                    ? 'text-white/90 hover:text-white'
-                    : 'text-black hover:text-[#00AAA5]'
+          <div className="flex items-center gap-x-16">
+            <nav className="hidden lg:flex items-center gap-8">
+              {navItems.map(item => (
+                <div key={item.label} className="relative group">
+                  <Link
+                    href={item.href}
+                    className={`flex items-center gap-1 text-sm font-semibold tracking-wide transition-colors ${
+                      isHome && !isScrolled
+                        ? 'text-white/90 hover:text-white'
+                        : 'text-black hover:text-[#00AAA5]'
                     }`}
-                >
-                  {item.label}
-                  {item.hasDropdown && <ChevronDown size={14} />}
-                </Link>
-                {item.hasDropdown && (
-                  <div className="absolute top-full left-0 mt-4 w-64 bg-white rounded-lg border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
-                    <div className="py-3">
-                      {companyDropdown.map((subItem, index) => (
-                        <Link
-                          key={subItem.label}
-                          href={subItem.href}
-                          className={`block px-6 py-3 text-sm font-medium text-black hover:bg-gray-50 hover:text-[#00AAA5] transition-colors ${index !== companyDropdown.length - 1
-                            ? 'border-b border-gray-100'
-                            : ''
+                  >
+                    {item.label}
+                    {item.hasDropdown && <ChevronDown size={14} />}
+                  </Link>
+                  {item.hasDropdown && (
+                    <div className="absolute top-full left-0 mt-4 w-64 bg-white rounded-lg border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                      <div className="py-3">
+                        {companyDropdown.map((subItem, index) => (
+                          <Link
+                            key={subItem.label}
+                            href={subItem.href}
+                            className={`block px-6 py-3 text-sm font-medium text-black hover:bg-gray-50 hover:text-[#00AAA5] transition-colors ${
+                              index !== companyDropdown.length - 1
+                                ? 'border-b border-gray-100'
+                                : ''
                             }`}
-                        >
-                          {subItem.label}
-                        </Link>
-                      ))}
+                          >
+                            {subItem.label}
+                          </Link>
+                        ))}
+                      </div>
                     </div>
-                  </div>
-                )}
-              </div>
-            ))}
-          </nav>
+                  )}
+                </div>
+              ))}
+            </nav>
 
-          <div className="hidden lg:block">
-            <Link
-              href="/contact"
-              className="bg-[#00AAA5] hover:bg-primary-dark text-white text-xs font-bold py-3 px-6 rounded-full transition-all duration-300 tracking-wider"
-            >
-              Get In Touch
-            </Link>
+            <div className="hidden lg:block">
+              <Link
+                href="/contact"
+                className="bg-[#00AAA5] hover:bg-primary-dark text-white text-xs font-bold font-orbiton py-3 px-6 rounded-full transition-all duration-300 tracking-wider"
+                style={{ fontFamily: 'Orbitron, sans-serif' }}
+              >
+                GET IN TOUCH
+              </Link>
+            </div>
           </div>
 
           <button
@@ -109,9 +113,21 @@ const Header = () => {
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             {isMobileMenuOpen ? (
-              <X size={28} className={isHome && !isScrolled && !isMobileMenuOpen ? 'text-white' : 'text-gray-800'} />
+              <X
+                size={28}
+                className={
+                  isHome && !isScrolled && !isMobileMenuOpen
+                    ? 'text-white'
+                    : 'text-gray-800'
+                }
+              />
             ) : (
-              <Menu size={28} className={isHome && !isScrolled ? 'text-white' : 'text-gray-800'} />
+              <Menu
+                size={28}
+                className={
+                  isHome && !isScrolled ? 'text-white' : 'text-gray-800'
+                }
+              />
             )}
           </button>
         </div>
@@ -119,7 +135,7 @@ const Header = () => {
 
       {isMobileMenuOpen && (
         <div className="lg:hidden bg-white absolute top-full left-0 w-full border-t border-gray-100 py-4 px-4 flex flex-col gap-4 animate-in slide-in-from-top-2">
-          {navItems.map((item) => (
+          {navItems.map(item => (
             <div key={item.label}>
               {!item.hasDropdown ? (
                 <Link
@@ -164,9 +180,10 @@ const Header = () => {
           <Link
             href="/contact"
             className="bg-primary text-white text-center font-bold py-3 rounded-md mt-2"
+            style={{ fontFamily: 'Orbitron, sans-serif' }}
             onClick={() => setIsMobileMenuOpen(false)}
           >
-            Get In Touch
+            GET IN TOUCH
           </Link>
         </div>
       )}

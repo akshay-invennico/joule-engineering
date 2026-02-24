@@ -104,9 +104,21 @@ const Footer = () => {
           <div className='border-r border-[#E4E4E4] py-10'>
             <h3 className="font-bold text-[20px] mb-6 tracking-wide uppercase">Quick Links</h3>
             <ul className="space-y-5 text-[#808080]">
-              {['Engineering Capabilities', 'Manufacturing Capabilities', 'Products', 'Executed Projects', 'Infrastructure & Facility', 'Clients'].map((item) => (
-                <li key={item}>
-                  <Link href="#" className="hover:text-[#00AAA5] transition-colors">{item}</Link>
+              {[
+                { label: 'Engineering Capabilities', href: '/capabilities' },
+                { label: 'Manufacturing Capabilities', href: '/capabilities' },
+                { label: 'Products', href: '/products' },
+                { label: 'Executed Projects', href: '/projects' },
+                { label: 'Infrastructure & Facility', href: '/infrastructure' },
+                { label: 'Clients', href: '/clients' },
+              ].map(item => (
+                <li key={item.label}>
+                  <Link
+                    href={item.href}
+                    className="hover:text-[#00AAA5] transition-colors"
+                  >
+                    {item.label}
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -153,7 +165,15 @@ const Footer = () => {
 
         <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-[#808080]">
           <p>© Joule Engineering Works. All rights reserved.</p>
-          <p>Designed & Developed by <a href="#" className="text-[#00AAA5] font-bold">Invennico Technolabs</a></p>
+          <p>
+            Designed & Developed by{' '}
+            <a
+              href="https://www.invennico.com/"
+              className="text-[#00AAA5] font-bold"
+            >
+              Invennico Technolabs
+            </a>
+          </p>
         </div>
 
       </div>

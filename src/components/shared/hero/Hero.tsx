@@ -19,7 +19,7 @@ const Hero = () => {
           loop
           muted
           playsInline
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover scale-110"
         >
           <source src="/assets/hero-video.mp4" type="video/mp4" />
           Your browser does not support the video tag.
@@ -52,7 +52,7 @@ const Hero = () => {
 
       <div className="absolute bottom-0 left-0 w-full z-20">
         <div className="container mx-auto px-4 lg:px-8 py-6">
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-[54px] text-center lg:text-left">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-[54px] text-center lg:text-left py-10">
             {stats.map((stat, index) => (
               <div key={index} className="flex flex-col items-center lg:items-start">
                 <span className="text-white text-3xl md:text-[32px] font-bold mb-1">{stat.value}</span>

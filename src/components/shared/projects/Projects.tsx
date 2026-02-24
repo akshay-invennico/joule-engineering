@@ -12,11 +12,11 @@ const Projects = () => {
   const [index, setIndex] = useState(0);
 
   const next = () => {
-    if (index < projects.length - 1) setIndex((prev) => prev + 1);
+    if (index < projects.length - 1) setIndex(prev => prev + 1);
   };
 
   const prev = () => {
-    if (index > 0) setIndex((prev) => prev - 1);
+    if (index > 0) setIndex(prev => prev - 1);
   };
 
   return (
@@ -25,24 +25,37 @@ const Projects = () => {
         {/* Header */}
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-10 gap-6">
           <div className="max-w-3xl">
-            <SubHeading text="Executed Projects" className='mb-3' color='#00AAA5' />
+            <SubHeading
+              text="Executed Projects"
+              className="mb-3"
+              color="#00AAA5"
+            />
             <h2 className="text-[#0A2540] text-3xl md:text-4xl lg:text-[36px] font-bold leading-tight mb-5">
               Engineered For Success
             </h2>
             <p className="text-[#808080] text-sm md:text-base leading-relaxed max-w-2xl">
-              We have successfully executed a wide range of industrial fabrication projects across sectors.
+              We have successfully executed a wide range of industrial
+              fabrication projects across sectors.
             </p>
           </div>
 
           <div className="hidden md:block">
             <Link
               href="/projects"
-              className="group flex items-center gap-2 text-primary font-bold text-sm"
+              className="group relative inline-flex items-center overflow-hidden rounded-full px-6"
             >
-              <div className="bg-primary text-white p-2 rounded-full">
-                <ArrowRight size={18} />
-              </div>
-              <span>View All Projects</span>
+              {/* Expanding Background */}
+              <span className="absolute left-0 top-0 h-full w-0 bg-primary transition-all duration-1000 ease-in-out group-hover:w-full"></span>
+
+              {/* Text */}
+              <span className="relative px-8 py-3 text-sm font-semibold text-primary transition-colors duration-1500 group-hover:text-white">
+                View All Projects
+              </span>
+
+              {/* Sliding Icon */}
+              <span className="absolute left-0 flex h-10 w-10 items-center justify-center rounded-full bg-primary text-white transition-all duration-900 ease-in-out group-hover:left-full group-hover:-translate-x-full">
+                <ArrowRight size={18} strokeWidth={2.5} />
+              </span>
             </Link>
           </div>
         </div>
@@ -56,7 +69,7 @@ const Projects = () => {
             }}
             transition={{ type: 'spring', stiffness: 300, damping: 30 }}
           >
-            {projects.map((project) => (
+            {projects.map(project => (
               <div
                 key={project.id}
                 className="min-w-full md:min-w-[calc(50%-12px)] group flex items-stretch bg-white overflow-hidden cursor-pointer"

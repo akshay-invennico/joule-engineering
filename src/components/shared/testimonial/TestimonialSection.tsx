@@ -35,7 +35,7 @@ const TestimonialSection = () => {
             </motion.div>
           </AnimatePresence>
 
-          <div className="border-t border-gray-700 w-full mb-8"></div>
+          <div className="border-t border-gray-500 w-full mb-8"></div>
 
           <div className="flex flex-col md:flex-row justify-between items-center gap-8">
             <AnimatePresence mode="wait">

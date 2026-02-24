@@ -4,9 +4,9 @@ import heroImg from '../../../public/assets/about.jpg';
 import { ArrowRight } from 'lucide-react';
 
 const stats = [
-  { value: "20+", label: "Years of Fabrication Experience" },
-  { value: "100+", label: "Projects Executed" },
-  { value: "50+", label: "Clients Served" },
+  { value: '20+', label: 'Years of Fabrication Experience' },
+  { value: '100+', label: 'Projects Executed' },
+  { value: '50+', label: 'Clients Served' },
 ];
 
 const Hero = () => {
@@ -30,8 +30,16 @@ const Hero = () => {
                           d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0"
                         />
                       </defs>
-                      <text fontSize="11.5" fontWeight="500" letterSpacing="2px" fill="#000000">
-                        <textPath xlinkHref="#circlePath" className="uppercase font-medium">
+                      <text
+                        fontSize="11.5"
+                        fontWeight="500"
+                        letterSpacing="2px"
+                        fill="#000000"
+                      >
+                        <textPath
+                          xlinkHref="#circlePath"
+                          className="uppercase font-medium"
+                        >
                           Brand • Strategy • Design •
                         </textPath>
                       </text>
@@ -41,7 +49,16 @@ const Hero = () => {
                   <div className="absolute w-16 h-16 md:w-20 md:h-20 rounded-full border border-[#233AFF33] flex items-center justify-center bg-white">
                     <div className="flex flex-col items-center justify-center text-[#0063A2]">
                       <div className="w-2 h-2 bg-[#0063A2] rounded-full mb-1"></div>
-                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2.5"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      >
                         <path d="M12 5v14" />
                         <path d="M19 12l-7 7-7-7" />
                       </svg>
@@ -65,15 +82,12 @@ const Hero = () => {
                 href="/about"
                 className="group relative inline-flex items-center overflow-hidden rounded-full px-6"
               >
-                {/* Sliding Blue Background */}
                 <span className="absolute left-0 top-0 h-full w-0 bg-[#0E5A8A] transition-all duration-1000 ease-in-out group-hover:w-full"></span>
 
-                {/* Text */}
                 <span className="relative px-8 py-3 font-medium text-primary transition-colors duration-1500 group-hover:text-white">
                   More About Us
                 </span>
 
-                {/* Arrow Circle */}
                 <span className="absolute left-0 flex h-12 w-12 items-center justify-center rounded-full bg-[#0E5A8A] text-white transition-all duration-900 ease-in-out group-hover:left-full group-hover:-translate-x-full">
                   <ArrowRight size={22} strokeWidth={2.5} />
                 </span>
@@ -92,7 +106,9 @@ const Hero = () => {
                     {stat.label}
                   </p>
 
-                  <div className="h-px w-full bg-[#E4E4E4] mt-[26px]" />
+                  {index !== stats.length - 1 && (
+                    <div className="h-px w-full bg-[#E4E4E4] mt-[26px]" />
+                  )}
                 </div>
               ))}
             </div>

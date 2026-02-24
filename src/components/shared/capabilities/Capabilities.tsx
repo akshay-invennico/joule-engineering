@@ -4,13 +4,16 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowUpRight, ArrowRight } from 'lucide-react';
-import capabilitiesImg from '../../../../public/assets/capabilities-img.png'
-import capabilitiesBg from '../../../../public/assets/capabilities-bg.png'
+import capabilitiesImg from '../../../../public/assets/capabilities-img.png';
+import capabilitiesBg from '../../../../public/assets/capabilities-bg.png';
 import SubHeading from '../subheading/SubHeading';
 
 const Capabilities = () => {
   const capabilities = [
-    { name: 'Chemical Mixing Vessel – 4 KL', href: '/chemical-mixing-vessel-4kl' },
+    {
+      name: 'Chemical Mixing Vessel – 4 KL',
+      href: '/chemical-mixing-vessel-4kl',
+    },
     { name: 'Storage Vessel', href: '/storage-vessel' },
     { name: 'Vacuum Vessel', href: '/vacuum-vessel' },
     { name: 'Industrial Frame Structure', href: '/industrial-frame-structure' },
@@ -28,33 +31,41 @@ const Capabilities = () => {
       </div>
 
       <div className="relative z-10 container mx-auto px-4 lg:px-8">
-
-        <div className='flex items-center justify-between'>
-
+        <div className="flex items-center justify-between">
           <div className="mb-12">
-            <SubHeading text="Core Engineering Capabilities" className='mb-3' color='white' />
+            <SubHeading
+              text="Core Engineering Capabilities"
+              className="mb-3"
+              color="white"
+            />
             <h2 className="text-white text-3xl md:text-4xl lg:text-[36px] font-bold mb-5">
               Engineering Capabilities
             </h2>
             <p className="text-white text-sm md:text-base max-w-2xl">
-              We provide end-to-end engineering support aligned with project specifications, codes, and
-              manufacturing expertise.
+              We provide end-to-end engineering support aligned with project
+              specifications, codes, and manufacturing expertise.
             </p>
           </div>
           <div className="mt-12 flex justify-end">
             <Link
               href="/capabilities"
-              className="group inline-flex items-center gap-2.5 text-white font-semibold py-3 px-6 rounded-full transition-all"
+              className="group relative inline-flex items-center overflow-hidden rounded-full px-6"
             >
-              <span className="bg-white text-[#00AAA5] p-1.5 rounded-full">
-                <ArrowRight size={16} />
-              </span>
-              <span className="text-sm">View All Capabilities</span>
+              {/* Expanding Background */}
+              <span className="absolute left-0 top-0 h-full w-0 bg-white transition-all duration-1000 ease-in-out group-hover:w-full"></span>
 
+              {/* Text */}
+              <span className="relative px-8 py-3 text-sm font-semibold text-white transition-colors duration-1500 group-hover:text-[#00AAA5]">
+                View All Capabilities
+              </span>
+
+              {/* Sliding Icon */}
+              <span className="absolute left-0 flex h-10 w-10 items-center justify-center rounded-full bg-white text-[#00AAA5] transition-all duration-900 ease-in-out group-hover:left-full group-hover:-translate-x-full">
+                <ArrowRight size={18} strokeWidth={2.5} />
+              </span>
             </Link>
           </div>
         </div>
-
 
         <div className="relative w-full rounded-2xl overflow-hidden shadow-2xl">
           {/* Image Container */}

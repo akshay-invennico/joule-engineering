@@ -61,8 +61,8 @@ const Manufacturing = () => {
                 className="mb-3"
                 color="#00AAA5"
               />
-              <h2 className="text-[#0A2540] text-3xl md:text-4xl lg:text-[36px] font-bold leading-tight mb-5 text-center md:text-left">
-                Manufacturing Strength &<br /> Infrastructure
+              <h2 className="text-primary text-3xl md:text-4xl lg:text-[36px] font-bold leading-tight mb-5 text-center md:text-left">
+                Manufacturing Strength & Infrastructure
               </h2>
               <p className="text-[#808080] text-sm md:text-base leading-relaxed max-w-2xl text-center md:text-left">
                 Our manufacturing facility is equipped to handle heavy, complex,

@@ -1,11 +1,11 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
 import Link from 'next/link';
-import fabrication from '../../../../public/icons/manufacturing/fabrication.svg'
-import welding from '../../../../public/icons/manufacturing/welding.svg'
-import setting from '../../../../public/icons/manufacturing/setting.svg'
-import crane from '../../../../public/icons/manufacturing/crane.svg'
-import workforce from '../../../../public/icons/manufacturing/workforce.svg'
+import fabrication from '../../../../public/icons/manufacturing/fabrication.svg';
+import welding from '../../../../public/icons/manufacturing/welding.svg';
+import setting from '../../../../public/icons/manufacturing/setting.svg';
+import crane from '../../../../public/icons/manufacturing/crane.svg';
+import workforce from '../../../../public/icons/manufacturing/workforce.svg';
 import Image from 'next/image';
 import SubHeading from '../subheading/SubHeading';
 
@@ -13,32 +13,38 @@ const Manufacturing = () => {
   const features = [
     {
       title: 'Heavy Fabrication Floor',
-      description: 'Our shop floor is designed for heavy-duty fabrication supporting large and complex industrial structures. It enables safe handling of oversized components.',
+      description:
+        'Our shop floor is designed for heavy-duty fabrication supporting large and complex industrial structures. It enables safe handling of oversized components.',
       icon: fabrication,
     },
     {
       title: 'Welding & Assembly',
-      description: 'Advanced welding and assembly setups ensure strong, precise, and code-compliant fabrication across a wide range of industrial applications.',
+      description:
+        'Advanced welding and assembly setups ensure strong, precise, and code-compliant fabrication across a wide range of industrial applications.',
       icon: welding,
     },
     {
       title: 'Machining & Fit-Up',
-      description: 'In-house machining and fit-up capabilities allow accurate alignment, reduced dependencies, and better control over fabrication quality and time.',
+      description:
+        'In-house machining and fit-up capabilities allow accurate alignment, reduced dependencies, and better control over fabrication quality and time.',
       icon: setting,
     },
     {
       title: 'Cranes & Material Handling',
-      description: 'High-capacity cranes and material handling systems support efficient movement of heavy components while maintaining safety and operational control.',
+      description:
+        'High-capacity cranes and material handling systems support efficient movement of heavy components while maintaining safety and operational control.',
       icon: crane,
     },
     {
       title: 'Skilled Workforce',
-      description: 'Our experienced workforce brings deep expertise in industrial fabrication, inspection readiness, and execution aligned with project specifications.',
+      description:
+        'Our experienced workforce brings deep expertise in industrial fabrication, inspection readiness, and execution aligned with project specifications.',
       icon: workforce,
     },
     {
       title: 'Skilled Workforce',
-      description: 'Our experienced workforce brings deep expertise in industrial fabrication, inspection readiness, and execution aligned with project specifications.',
+      description:
+        'Our experienced workforce brings deep expertise in industrial fabrication, inspection readiness, and execution aligned with project specifications.',
       icon: workforce,
     },
   ];
@@ -46,30 +52,42 @@ const Manufacturing = () => {
   return (
     <section className="py-16 md:py-[100px] bg-white overflow-hidden">
       <div className="container mx-auto px-4 lg:px-8">
-
         {/* Header Section */}
         <div className="mb-10">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 md:gap-12">
             <div className="max-w-3xl">
-              <SubHeading text="Manufacturing & Infrastructure" className='mb-3' color='#00AAA5' />
+              <SubHeading
+                text="Manufacturing & Infrastructure"
+                className="mb-3"
+                color="#00AAA5"
+              />
               <h2 className="text-[#0A2540] text-3xl md:text-4xl lg:text-[36px] font-bold leading-tight mb-5 text-center md:text-left">
                 Manufacturing Strength &<br /> Infrastructure
               </h2>
               <p className="text-[#808080] text-sm md:text-base leading-relaxed max-w-2xl text-center md:text-left">
-                Our manufacturing facility is equipped to handle heavy, complex, and high-precision fabrication work.
+                Our manufacturing facility is equipped to handle heavy, complex,
+                and high-precision fabrication work.
               </p>
             </div>
 
             <div className="flex justify-center md:justify-end shrink-0 mb-2 md:mb-0">
               <Link
                 href="/infrastructure"
-                className="group flex items-center gap-2 text-primary font-bold text-base"
                 aria-label="View Infrastructure"
+                className="group relative inline-flex items-center overflow-hidden rounded-full px-6"
               >
-                <div className="bg-primary text-white p-2 rounded-full">
-                  <ArrowRight size={18} />
-                </div>
-                <span>View Infrastructure</span>
+                {/* Expanding Background */}
+                <span className="absolute left-0 top-0 h-full w-0 bg-primary transition-all duration-1000 ease-in-out group-hover:w-full"></span>
+
+                {/* Text */}
+                <span className="relative px-8 py-3 font-semibold text-primary transition-colors duration-1500 group-hover:text-white">
+                  View Infrastructure
+                </span>
+
+                {/* Sliding Icon */}
+                <span className="absolute left-0 flex h-12 w-12 items-center justify-center rounded-full bg-primary text-white transition-all duration-900 ease-in-out group-hover:left-full group-hover:-translate-x-full">
+                  <ArrowRight size={18} strokeWidth={2.5} />
+                </span>
               </Link>
             </div>
           </div>
@@ -94,9 +112,7 @@ const Manufacturing = () => {
                   />
                 </div>
 
-                <h3 className="text-xl mt-4 mb-3 font-bold">
-                  {feature.title}
-                </h3>
+                <h3 className="text-xl mt-4 mb-3 font-bold">{feature.title}</h3>
 
                 <p className="text-[#808080] text-base leading-relaxed">
                   {feature.description}
@@ -105,7 +121,6 @@ const Manufacturing = () => {
             );
           })}
         </div>
-
       </div>
     </section>
   );

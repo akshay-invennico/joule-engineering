@@ -43,8 +43,8 @@ const Header = () => {
   return (
     <header
       className={`w-full z-40 transition-all duration-300 ${isHome && !isScrolled
-        ? 'bg-transparent absolute top-[40px] left-0 right-0'
-        : 'bg-white sticky top-[36px] text-gray-800 border-b border-[#E4E4E4]'
+        ? 'bg-transparent absolute top-[33px] left-0 right-0'
+        : 'bg-white sticky top-[33px] text-gray-800 border-b border-[#E4E4E4]'
         }`}
     >
       <div className="container mx-auto px-4 lg:px-8">

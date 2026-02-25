@@ -20,7 +20,7 @@ const Hero = () => {
 
       <div className="container mx-auto px-4 lg:px-8 relative z-10 text-white">
         <div className="max-w-4xl pt-10">
-          <h1 className="text-4xl md:text-5xl lg:text-[44px] font-bold mb-5 leading-tight uppercase tracking-wide">
+          <h1 className="text-4xl md:text-5xl lg:text-[44px] font-bold mb-5 leading-tight tracking-wide">
             Infrastructure & Facilities
           </h1>
 

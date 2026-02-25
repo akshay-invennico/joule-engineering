@@ -17,11 +17,21 @@ const CtaSection = () => {
               Let&apos;s Build Dream Something Amazing.
             </h2>
 
-            <button className="group flex items-center gap-3 text-white font-bold text-lg cursor-pointer">
-              <span className="w-12 h-12 rounded-full bg-white text-[#00AAA5] flex items-center justify-center">
-                <ArrowRight size={24} />
+            <button className="group group-hover:text-[#00AAA5] relative inline-flex items-center justify-center rounded-full transition-all duration-500 h-[46px] overflow-hidden leading-none cursor-pointer">
+              {/* Expanding Background */}
+              <span className="absolute left-0 top-0 bottom-0 w-[46px] group-hover:w-full bg-white rounded-full transition-all duration-500 ease-in-out z-0" />
+
+              {/* Text Wrapper */}
+              <span className="relative z-10 flex items-center h-full pl-[56px] pr-[24px] group-hover:pl-[24px] group-hover:pr-[56px] transition-all duration-500 ease-in-out">
+                <span className="text-lg font-bold text-white group-hover:text-[#00AAA5] transition-colors duration-500 ease-in-out">
+                  Start Journey
+                </span>
               </span>
-              <span>Start Journey</span>
+
+              {/* Arrow Wrapper */}
+              <span className="absolute left-0 top-0 w-[46px] h-[46px] flex items-center justify-center text-[#00AAA5] transition-all duration-500 ease-in-out z-20 group-hover:left-[calc(100%-46px)]">
+                <ArrowRight size={18} />
+              </span>
             </button>
           </div>
 

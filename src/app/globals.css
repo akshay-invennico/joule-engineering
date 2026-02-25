@@ -11,6 +11,10 @@ h1 {
   font-family: 'Manrope', sans-serif;
 }
 
+button {
+  cursor: pointer;
+}
+
 @layer components {
   .btn {
     @apply inline-flex items-center justify-center px-6 py-3 rounded-full text-base font-medium whitespace-nowrap transition duration-200 cursor-pointer;

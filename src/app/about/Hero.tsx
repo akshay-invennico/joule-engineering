@@ -80,16 +80,21 @@ const Hero = () => {
             <div className="mt-5">
               <Link
                 href="/about"
-                className="group relative inline-flex items-center overflow-hidden rounded-full px-6"
+                className="group group-hover:text-white relative inline-flex items-center justify-center rounded-full transition-all duration-500 h-[46px] overflow-hidden leading-none"
               >
-                <span className="absolute left-0 top-0 h-full w-0 bg-[#0E5A8A] transition-all duration-1000 ease-in-out group-hover:w-full"></span>
+                {/* Expanding Background */}
+                <span className="absolute left-0 top-0 bottom-0 w-[46px] group-hover:w-full bg-[#0E5A8A] rounded-full transition-all duration-500 ease-in-out z-0" />
 
-                <span className="relative px-8 py-3 font-medium text-primary transition-colors duration-1500 group-hover:text-white">
-                  More About Us
+                {/* Text Wrapper */}
+                <span className="relative z-10 flex items-center h-full pl-[56px] pr-[24px] group-hover:pl-[24px] group-hover:pr-[56px] transition-all duration-500 ease-in-out">
+                  <span className="text-base font-medium text-primary group-hover:text-white transition-colors duration-500 ease-in-out">
+                    More About Us
+                  </span>
                 </span>
 
-                <span className="absolute left-0 flex h-12 w-12 items-center justify-center rounded-full bg-[#0E5A8A] text-white transition-all duration-900 ease-in-out group-hover:left-full group-hover:-translate-x-full">
-                  <ArrowRight size={22} strokeWidth={2.5} />
+                {/* Arrow Wrapper */}
+                <span className="absolute left-0 top-0 w-[46px] h-[46px] flex items-center justify-center text-white transition-all duration-500 ease-in-out z-20 group-hover:left-[calc(100%-46px)]">
+                  <ArrowRight size={18} />
                 </span>
               </Link>
             </div>

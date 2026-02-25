@@ -42,19 +42,21 @@ const Projects = () => {
           <div className="hidden md:block">
             <Link
               href="/projects"
-              className="group relative inline-flex items-center overflow-hidden rounded-full px-6"
+              className="group group-hover:text-white relative inline-flex items-center justify-center rounded-full transition-all duration-500 h-[46px] overflow-hidden leading-none"
             >
               {/* Expanding Background */}
-              <span className="absolute left-0 top-0 h-full w-0 bg-primary transition-all duration-1000 ease-in-out group-hover:w-full"></span>
+              <span className="absolute left-0 top-0 bottom-0 w-[46px] group-hover:w-full bg-primary rounded-full transition-all duration-500 ease-in-out z-0" />
 
-              {/* Text */}
-              <span className="relative px-8 py-3 text-sm font-semibold text-primary transition-colors duration-1500 group-hover:text-white">
-                View All Projects
+              {/* Text Wrapper */}
+              <span className="relative z-10 flex items-center h-full pl-[56px] pr-[24px] group-hover:pl-[24px] group-hover:pr-[56px] transition-all duration-500 ease-in-out">
+                <span className="text-sm font-semibold text-primary group-hover:text-white transition-colors duration-500 ease-in-out">
+                  View All Projects
+                </span>
               </span>
 
-              {/* Sliding Icon */}
-              <span className="absolute left-0 flex h-10 w-10 items-center justify-center rounded-full bg-primary text-white transition-all duration-900 ease-in-out group-hover:left-full group-hover:-translate-x-full">
-                <ArrowRight size={18} strokeWidth={2.5} />
+              {/* Arrow Wrapper */}
+              <span className="absolute left-0 top-0 w-[46px] h-[46px] flex items-center justify-center text-white transition-all duration-500 ease-in-out z-20 group-hover:left-[calc(100%-46px)]">
+                <ArrowRight size={18} />
               </span>
             </Link>
           </div>
@@ -63,19 +65,19 @@ const Projects = () => {
         {/* Carousel */}
         <div className="relative overflow-hidden">
           <motion.div
-  className="flex gap-6"
-  animate={{
-    x:
-      typeof window !== 'undefined' && window.innerWidth >= 768
-        ? `-${index * 50}%`
-        : `-${index * 100}%`,
-  }}
-  transition={{ type: 'spring', stiffness: 300, damping: 30 }}
->
+            className="flex"
+            animate={{
+              x:
+                typeof window !== 'undefined' && window.innerWidth >= 768
+                  ? `-${index * 50}%`
+                  : `-${index * 100}%`,
+            }}
+            transition={{ type: 'spring', stiffness: 300, damping: 30 }}
+          >
             {projects.map(project => (
               <div
                 key={project.id}
-                className="min-w-full md:min-w-1/2 group flex items-stretch bg-white overflow-hidden cursor-pointer"
+                className="min-w-full md:min-w-1/2 group flex items-stretch bg-white overflow-hidden cursor-pointer md:pr-6 last:pr-0"
               >
                 <div className="w-1/2 relative min-h-[380px]">
                   <div className="absolute inset-0 z-10">
@@ -94,7 +96,7 @@ const Projects = () => {
                   </div>
 
                   <div className="mt-8 flex flex-col h-full justify-end">
-                    <h3 className="font-play text-[#0A2540] text-xl lg:text-2xl font-bold mb-6 uppercase tracking-wide leading-tight">
+                    <h3 className="font-play text-[#0A2540] text-xl lg:text-2xl font-bold mb-6 tracking-wide leading-tight">
                       {project.title}
                     </h3>
                     <div className="flex gap-2 flex-wrap">

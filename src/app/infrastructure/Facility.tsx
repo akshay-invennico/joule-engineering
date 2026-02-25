@@ -32,13 +32,22 @@ const Facility = () => {
 
             <Link
               href="/capabilities"
-              className="group inline-flex items-center gap-3 text-white font-semibold rounded-full transition-all"
+              className="group group-hover:text-white relative inline-flex items-center justify-center rounded-full transition-all duration-500 h-[46px] overflow-hidden leading-none"
             >
-              <span className="bg-primary text-white p-1.5 rounded-full">
-                <ArrowRight size={16} />
-              </span>
-              <span className="text-base text-primary">Our Capabilities</span>
+              {/* Expanding Background */}
+              <span className="absolute left-0 top-0 bottom-0 w-[46px] group-hover:w-full bg-primary rounded-full transition-all duration-500 ease-in-out z-0" />
 
+              {/* Text Wrapper */}
+              <span className="relative z-10 flex items-center h-full pl-[56px] pr-[24px] group-hover:pl-[24px] group-hover:pr-[56px] transition-all duration-500 ease-in-out">
+                <span className="text-base font-semibold text-primary group-hover:text-white transition-colors duration-500 ease-in-out">
+                  Our Capabilities
+                </span>
+              </span>
+
+              {/* Arrow Wrapper */}
+              <span className="absolute left-0 top-0 w-[46px] h-[46px] flex items-center justify-center text-white transition-all duration-500 ease-in-out z-20 group-hover:left-[calc(100%-46px)]">
+                <ArrowRight size={18} />
+              </span>
             </Link>
           </div>
 

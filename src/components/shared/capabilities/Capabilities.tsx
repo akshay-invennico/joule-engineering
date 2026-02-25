@@ -49,19 +49,21 @@ const Capabilities = () => {
           <div className="mt-12 flex justify-end">
             <Link
               href="/capabilities"
-              className="group relative inline-flex items-center overflow-hidden rounded-full px-6"
+              className="group group-hover:text-primary relative inline-flex items-center justify-center rounded-full transition-all duration-500 h-[46px] overflow-hidden leading-none"
             >
               {/* Expanding Background */}
-              <span className="absolute left-0 top-0 h-full w-0 bg-white transition-all duration-1000 ease-in-out group-hover:w-full"></span>
+              <span className="absolute left-0 top-0 bottom-0 w-[46px] group-hover:w-full bg-white rounded-full transition-all duration-500 ease-in-out z-0" />
 
-              {/* Text */}
-              <span className="relative px-8 py-3 text-sm font-semibold text-white transition-colors duration-1500 group-hover:text-[#00AAA5]">
-                View All Capabilities
+              {/* Text Wrapper */}
+              <span className="relative z-10 flex items-center h-full pl-[56px] pr-[24px] group-hover:pl-[24px] group-hover:pr-[56px] transition-all duration-500 ease-in-out">
+                <span className="text-sm font-semibold text-white group-hover:text-primary transition-colors duration-500 ease-in-out">
+                  View All Capabilities
+                </span>
               </span>
 
-              {/* Sliding Icon */}
-              <span className="absolute left-0 flex h-10 w-10 items-center justify-center rounded-full bg-white text-[#00AAA5] transition-all duration-900 ease-in-out group-hover:left-full group-hover:-translate-x-full">
-                <ArrowRight size={18} strokeWidth={2.5} />
+              {/* Arrow Wrapper */}
+              <span className="absolute left-0 top-0 w-[46px] h-[46px] flex items-center justify-center text-primary transition-all duration-500 ease-in-out z-20 group-hover:left-[calc(100%-46px)]">
+                <ArrowRight size={18} />
               </span>
             </Link>
           </div>

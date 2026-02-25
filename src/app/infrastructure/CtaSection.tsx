@@ -1,23 +1,23 @@
 'use client';
 
 import React from 'react';
-import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
-import ctaBg from '../../../public/assets/infrastructure/infra3.png';
 
 const CtaSection = () => {
   return (
     <section className="relative w-full h-[420px] sm:h-[480px] md:h-[520px] lg:h-[860px] overflow-hidden">
-      {/* Background Image */}
+      {/* Background Video */}
       <div className="absolute inset-0 w-full h-full z-0">
-        <Image
-          src={ctaBg}
-          alt="Heavy Fabrication Shop Floor"
-          fill
-          className="object-cover object-center"
-          priority
-        />
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="w-full h-full object-cover object-center"
+        >
+          <source src="/assets/heavy-fabrication.mp4" type="video/mp4" />
+        </video>
         {/* Dark Overlay */}
         <div className="absolute inset-0 bg-black/70" />
       </div>
@@ -42,13 +42,21 @@ const CtaSection = () => {
             {/* CTA Link */}
             <Link
               href="/capabilities"
-              className="group inline-flex items-center gap-3 transition-all"
+              className="group group-hover:text-primary relative inline-flex items-center justify-center rounded-full transition-all duration-500 h-[46px] overflow-hidden leading-none"
             >
-              <span className="bg-white text-primary p-2 rounded-full flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors duration-300">
-                <ArrowRight size={16} />
+              {/* Expanding Background */}
+              <span className="absolute left-0 top-0 bottom-0 w-[46px] group-hover:w-full bg-white rounded-full transition-all duration-500 ease-in-out z-0" />
+
+              {/* Text Wrapper */}
+              <span className="relative z-10 flex items-center h-full pl-[56px] pr-[24px] group-hover:pl-[24px] group-hover:pr-[56px] transition-all duration-500 ease-in-out">
+                <span className="text-sm sm:text-base font-semibold text-white group-hover:text-primary transition-colors duration-500 ease-in-out">
+                  Our Capabilities
+                </span>
               </span>
-              <span className="text-white text-sm sm:text-base font-semibold group-hover:text-white/80 transition-colors duration-300">
-                Our Capabilities
+
+              {/* Arrow Wrapper */}
+              <span className="absolute left-0 top-0 w-[46px] h-[46px] flex items-center justify-center text-primary transition-all duration-500 ease-in-out z-20 group-hover:left-[calc(100%-46px)]">
+                <ArrowRight size={18} />
               </span>
             </Link>
           </div>

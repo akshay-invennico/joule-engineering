@@ -40,7 +40,7 @@ const Footer = () => {
 
           {/* Column 1: Locations */}
           <div className='border-r border-[#E4E4E4] py-10'>
-            <h3 className="font-bold text-[20px] mb-6 tracking-wide uppercase">Our Locations</h3>
+            <h3 className="font-bold text-[20px] mb-6 tracking-wide">Our Locations</h3>
 
             <div className="mb-6">
               <h4 className="text-primary font-bold mb-2">Bengaluru, India</h4>
@@ -60,7 +60,7 @@ const Footer = () => {
 
           {/* Column 2: Company */}
           <div className='border-r border-[#E4E4E4] py-10'>
-            <h3 className="font-bold text-[20px] mb-6 tracking-wide uppercase">Company</h3>
+            <h3 className="font-bold text-[20px] mb-6 tracking-wide">Company</h3>
             <ul className="space-y-5 text-[#808080]">
               <li>
                 <Link href={routes.about} className="hover:text-[#00AAA5] transition-colors">
@@ -102,7 +102,7 @@ const Footer = () => {
 
           {/* Column 3: Quick Links */}
           <div className='border-r border-[#E4E4E4] py-10'>
-            <h3 className="font-bold text-[20px] mb-6 tracking-wide uppercase">Quick Links</h3>
+            <h3 className="font-bold text-[20px] mb-6 tracking-wide">Quick Links</h3>
             <ul className="space-y-5 text-[#808080]">
               {[
                 { label: 'Engineering Capabilities', href: '/capabilities' },
@@ -126,7 +126,7 @@ const Footer = () => {
 
           {/* Column 4: Get in Touch */}
           <div className='py-10'>
-            <h3 className="font-bold text-[20px] mb-6 tracking-wide uppercase">Get in Touch</h3>
+            <h3 className="font-bold text-[20px] mb-6 tracking-wide">Get in Touch</h3>
             <div className="space-y-8">
 
               <div className="flex items-start gap-4">

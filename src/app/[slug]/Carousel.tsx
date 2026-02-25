@@ -37,7 +37,7 @@ const Carousel: React.FC<CarouselProps> = ({ images, title, client, projectType,
         </div>
 
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 gap-6">
-          <h1 className="text-[#0063A2] text-3xl md:text-4xl lg:text-[44px] font-bold uppercase leading-tight max-w-3xl">
+          <h1 className="text-[#0063A2] text-3xl md:text-4xl lg:text-[44px] font-bold leading-tight max-w-3xl">
             {title}
           </h1>
 
@@ -61,7 +61,7 @@ const Carousel: React.FC<CarouselProps> = ({ images, title, client, projectType,
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 border-t border-gray-200 pt-8">
           <div>
-            <span className="block text-gray-500 font-bold mb-2 text-sm uppercase tracking-wide">
+            <span className="block text-gray-500 font-bold mb-2 text-sm tracking-wide">
               Client:
             </span>
             <p className="text-gray-900 font-bold text-lg md:text-xl">
@@ -70,7 +70,7 @@ const Carousel: React.FC<CarouselProps> = ({ images, title, client, projectType,
           </div>
 
           <div>
-            <span className="block text-gray-500 font-bold mb-2 text-sm uppercase tracking-wide">
+            <span className="block text-gray-500 font-bold mb-2 text-sm tracking-wide">
               Project Type:
             </span>
             <p className="text-gray-900 font-bold text-lg md:text-xl">
@@ -80,7 +80,7 @@ const Carousel: React.FC<CarouselProps> = ({ images, title, client, projectType,
 
           {description && (
             <div className="md:col-span-2">
-              <span className="block text-gray-500 font-bold mb-2 text-sm uppercase tracking-wide">
+              <span className="block text-gray-500 font-bold mb-2 text-sm tracking-wide">
                 Description:
               </span>
               <p className="text-gray-900 text-base">

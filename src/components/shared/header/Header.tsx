@@ -59,33 +59,42 @@ const Header = () => {
               priority
             />
           </Link>
-          <div className="flex items-center gap-x-16">
+          <div className="flex items-center gap-x-10">
             <nav className="hidden lg:flex items-center gap-8">
               {navItems.map(item => (
                 <div key={item.label} className="relative group">
-                  <Link
-                    href={item.href}
-                    className={`flex items-center gap-1 text-sm font-semibold tracking-wide transition-colors ${
-                      isHome && !isScrolled
+                  {item.hasDropdown ? (
+                    <span
+                      className={`cursor-pointer flex items-center gap-1 text-sm font-semibold tracking-wide transition-colors ${isHome && !isScrolled
                         ? 'text-white/90 hover:text-white'
                         : 'text-black hover:text-[#00AAA5]'
-                    }`}
-                  >
-                    {item.label}
-                    {item.hasDropdown && <ChevronDown size={14} />}
-                  </Link>
+                        }`}
+                    >
+                      {item.label}
+                      <ChevronDown size={14} />
+                    </span>
+                  ) : (
+                    <Link
+                      href={item.href}
+                      className={`flex items-center gap-1 text-sm font-semibold tracking-wide transition-colors ${isHome && !isScrolled
+                        ? 'text-white/90 hover:text-white'
+                        : 'text-black hover:text-[#00AAA5]'
+                        }`}
+                    >
+                      {item.label}
+                    </Link>
+                  )}
                   {item.hasDropdown && (
                     <div className="absolute top-full left-0 mt-4 w-64 bg-white rounded-lg border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
-                      <div className="py-3">
+                      <div className="">
                         {companyDropdown.map((subItem, index) => (
                           <Link
                             key={subItem.label}
                             href={subItem.href}
-                            className={`block px-6 py-3 text-sm font-medium text-black hover:bg-gray-50 hover:text-[#00AAA5] transition-colors ${
-                              index !== companyDropdown.length - 1
-                                ? 'border-b border-gray-100'
-                                : ''
-                            }`}
+                            className={`block px-6 py-3 text-sm font-medium text-black hover:bg-gray-50 hover:text-[#00AAA5] transition-colors ${index !== companyDropdown.length - 1
+                              ? 'border-b border-gray-100'
+                              : ''
+                              }`}
                           >
                             {subItem.label}
                           </Link>

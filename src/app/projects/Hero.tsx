@@ -36,12 +36,20 @@ const Hero = () => {
             Joule Engineering Works has successfully executed a wide range of heavy fabrication and process equipment projects for leading EPC companies and industrial clients. Our portfolio reflects technical precision, material expertise, and disciplined execution aligned with industrial standards.
           </p>
 
-          <button className="inline-flex items-center gap-4 group">
-            <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center">
-              <ArrowRight className="text-[#00AAA5] w-6 h-6" />
-            </div>
-            <span className="text-white font-bold text-lg tracking-wide cursor-pointer">
-              Explore Executed Projects
+          <button className="group group-hover:text-[#00AAA5] relative inline-flex items-center justify-center rounded-full transition-all duration-500 h-[46px] overflow-hidden leading-none cursor-pointer">
+            {/* Expanding Background */}
+            <span className="absolute left-0 top-0 bottom-0 w-[46px] group-hover:w-full bg-white rounded-full transition-all duration-500 ease-in-out z-0" />
+
+            {/* Text Wrapper */}
+            <span className="relative z-10 flex items-center h-full pl-[56px] pr-[24px] group-hover:pl-[24px] group-hover:pr-[56px] transition-all duration-500 ease-in-out">
+              <span className="text-lg font-bold text-white group-hover:text-[#00AAA5] transition-colors duration-500 ease-in-out tracking-wide">
+                Explore Executed Projects
+              </span>
+            </span>
+
+            {/* Arrow Wrapper */}
+            <span className="absolute left-0 top-0 w-[46px] h-[46px] flex items-center justify-center text-[#00AAA5] transition-all duration-500 ease-in-out z-20 group-hover:left-[calc(100%-46px)]">
+              <ArrowRight size={18} />
             </span>
           </button>
         </div>

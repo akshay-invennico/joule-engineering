@@ -3,6 +3,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { ArrowRight } from 'lucide-react';
 import ctaBg from '../../../../public/assets/execution-cta.jpg';
 import SubHeading from '../subheading/SubHeading';
 
@@ -31,26 +32,23 @@ const ExecutionCta = () => {
             Connect with our engineering team to review technical specifications, fabrication scope, and compliance requirements.
           </p>
 
-          <Link href="/contact" className="inline-flex items-center gap-4 group">
-            <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="#00A99D"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="w-6 h-6"
-              >
-                <path d="M5 12h14" />
-                <path d="m12 5 7 7-7 7" />
-              </svg>
-            </div>
-            <span className="text-white font-bold text-lg">
-              Discuss Your Project
+          <Link
+            href="/contact"
+            className="group group-hover:text-[#00A99D] relative inline-flex items-center justify-center rounded-full transition-all duration-500 h-[46px] overflow-hidden leading-none"
+          >
+            {/* Expanding Background */}
+            <span className="absolute left-0 top-0 bottom-0 w-[46px] group-hover:w-full bg-white rounded-full transition-all duration-500 ease-in-out z-0" />
+
+            {/* Text Wrapper */}
+            <span className="relative z-10 flex items-center h-full pl-[56px] pr-[24px] group-hover:pl-[24px] group-hover:pr-[56px] transition-all duration-500 ease-in-out">
+              <span className="text-lg font-bold text-white group-hover:text-[#00A99D] transition-colors duration-500 ease-in-out">
+                Discuss Your Project
+              </span>
+            </span>
+
+            {/* Arrow Wrapper */}
+            <span className="absolute left-0 top-0 w-[46px] h-[46px] flex items-center justify-center text-[#00A99D] transition-all duration-500 ease-in-out z-20 group-hover:left-[calc(100%-46px)]">
+              <ArrowRight size={18} />
             </span>
           </Link>
         </div>

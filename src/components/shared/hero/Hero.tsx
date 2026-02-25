@@ -39,20 +39,29 @@ const Hero = () => {
 
           <Link
             href="/capabilities"
-            className="group inline-flex items-center gap-2.5 text-white font-semibold rounded-full transition-all"
+            className="group group-hover:text-primary relative inline-flex items-center justify-center rounded-full transition-all duration-500 h-[46px] overflow-hidden leading-none"
           >
-            <span className="bg-white text-[#00AAA5] p-3.5 rounded-full">
+            {/* Expanding Background */}
+            <span className="absolute left-0 top-0 bottom-0 w-[46px] group-hover:w-full bg-white rounded-full transition-all duration-500 ease-in-out z-0" />
+
+            {/* Text Wrapper */}
+            <span className="relative z-10 flex items-center h-full pl-[56px] pr-[24px] group-hover:pl-[24px] group-hover:pr-[56px] transition-all duration-500 ease-in-out">
+              <span className="text-lg font-semibold text-white group-hover:text-primary transition-colors duration-500 ease-in-out">
+                Discuss Your Requirement
+              </span>
+            </span>
+
+            {/* Arrow Wrapper */}
+            <span className="absolute left-0 top-0 w-[46px] h-[46px] flex items-center justify-center text-[#00AAA5] hover:text-primary transition-all duration-500 ease-in-out z-20 group-hover:left-[calc(100%-46px)]">
               <ArrowRight size={18} />
             </span>
-            <span className="text-lg">Discuss Your Requirement</span>
-
           </Link>
         </div>
       </div>
 
       <div className="absolute bottom-0 left-0 w-full z-20">
         <div className="container mx-auto px-4 lg:px-8 py-6">
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-[54px] text-center lg:text-left py-10">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-[54px] text-center lg:text-left">
             {stats.map((stat, index) => (
               <div key={index} className="flex flex-col items-center lg:items-start">
                 <span className="text-white text-3xl md:text-[32px] font-bold mb-1">{stat.value}</span>

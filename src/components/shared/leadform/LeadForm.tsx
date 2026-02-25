@@ -194,12 +194,22 @@ const LeadForm = () => {
                 <button
                   type="submit"
                   disabled={loading}
-                  className="inline-flex items-center gap-2 text-[#005B96] font-bold hover:text-[#004A7A] transition-colors group mt-4 disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="group group-hover:text-white relative inline-flex items-center justify-center rounded-full transition-all duration-500 h-[46px] overflow-hidden leading-none disabled:opacity-50 disabled:cursor-not-allowed mt-4"
                 >
-                  <span className="w-10 h-10 rounded-full bg-[#005B96] text-white flex items-center justify-center group-hover:bg-[#004A7A] transition-colors">
-                    {loading ? <Loader2 size={20} className="animate-spin" /> : <ArrowRight size={20} />}
+                  {/* Expanding Background */}
+                  <span className="absolute left-0 top-0 bottom-0 w-[46px] group-hover:w-full bg-[#005B96] rounded-full transition-all duration-500 ease-in-out z-0" />
+
+                  {/* Text Wrapper */}
+                  <span className="relative z-10 flex items-center h-full pl-[56px] pr-[24px] group-hover:pl-[24px] group-hover:pr-[56px] transition-all duration-500 ease-in-out">
+                    <span className="text-base font-bold text-[#005B96] group-hover:text-white transition-colors duration-500 ease-in-out">
+                      {loading ? 'Sending...' : 'Submit Now'}
+                    </span>
                   </span>
-                  {loading ? 'Sending...' : 'Submit Now'}
+
+                  {/* Arrow Wrapper */}
+                  <span className="absolute left-0 top-0 w-[46px] h-[46px] flex items-center justify-center text-white transition-all duration-500 ease-in-out z-20 group-hover:left-[calc(100%-46px)]">
+                    {loading ? <Loader2 size={18} className="animate-spin" /> : <ArrowRight size={18} />}
+                  </span>
                 </button>
               </form>
             </div>

@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import { ArrowRight, Loader2 } from 'lucide-react';
-import capabilitiesImg from '../../../../public/assets/capabilities-img.png';
+import capabilitiesImg from '../../../../public/assets/lead-form.png';
 import SubHeading from '../subheading/SubHeading';
 import toast from 'react-hot-toast';
 
@@ -89,9 +89,8 @@ const LeadForm = () => {
                 src={capabilitiesImg}
                 alt="Engineering worker"
                 fill
-                className="object-cover"
+                className=""
               />
-              <div className="absolute inset-0 bg-blue-900/10 mix-blend-multiply"></div>
             </div>
 
             <div className="w-full lg:w-1/2 flex flex-col justify-center">

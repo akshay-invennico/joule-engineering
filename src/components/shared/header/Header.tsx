@@ -40,6 +40,11 @@ const Header = () => {
     { label: 'Company', href: '/company', hasDropdown: true },
   ];
 
+  const isCompanyActive = companyDropdown.some(sub => pathname.startsWith(sub.href));
+
+  const isNavActive = (item: typeof navItems[0]) =>
+    item.hasDropdown ? isCompanyActive : pathname === item.href;
+
   return (
     <header
       className={`w-full z-40 transition-all duration-300 ${isHome && !isScrolled
@@ -65,9 +70,11 @@ const Header = () => {
                 <div key={item.label} className="relative group">
                   {item.hasDropdown ? (
                     <span
-                      className={`cursor-pointer flex items-center gap-1 text-sm font-semibold tracking-wide transition-colors ${isHome && !isScrolled
-                        ? 'text-white/90 hover:text-white'
-                        : 'text-black hover:text-[#00AAA5]'
+                      className={`cursor-pointer flex items-center gap-1 text-sm font-semibold tracking-wide transition-colors ${isNavActive(item)
+                          ? 'text-[#00AAA5]'
+                          : isHome && !isScrolled
+                            ? 'text-white/90 hover:text-white'
+                            : 'text-black hover:text-[#00AAA5]'
                         }`}
                     >
                       {item.label}
@@ -76,9 +83,11 @@ const Header = () => {
                   ) : (
                     <Link
                       href={item.href}
-                      className={`flex items-center gap-1 text-sm font-semibold tracking-wide transition-colors ${isHome && !isScrolled
-                        ? 'text-white/90 hover:text-white'
-                        : 'text-black hover:text-[#00AAA5]'
+                      className={`flex items-center gap-1 text-sm font-semibold tracking-wide transition-colors ${isNavActive(item)
+                          ? 'text-[#00AAA5]'
+                          : isHome && !isScrolled
+                            ? 'text-white/90 hover:text-white'
+                            : 'text-black hover:text-[#00AAA5]'
                         }`}
                     >
                       {item.label}
@@ -149,7 +158,8 @@ const Header = () => {
               {!item.hasDropdown ? (
                 <Link
                   href={item.href}
-                  className="text-gray-800 font-medium py-2 border-b border-gray-50 hover:text-primary transition-colors block"
+                  className={`font-medium py-2 border-b border-gray-50 hover:text-[#00AAA5] transition-colors block ${isNavActive(item) ? 'text-[#00AAA5]' : 'text-gray-800'
+                    }`}
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   {item.label}
@@ -158,7 +168,8 @@ const Header = () => {
                 <>
                   <button
                     onClick={() => setMobileCompanyOpen(!mobileCompanyOpen)}
-                    className="w-full flex justify-between items-center text-gray-800 font-medium py-2 border-b border-gray-50"
+                    className={`w-full flex justify-between items-center font-medium py-2 border-b border-gray-50 ${isNavActive(item) ? 'text-[#00AAA5]' : 'text-gray-800'
+                      }`}
                   >
                     {item.label}
                     <ChevronDown
@@ -174,7 +185,8 @@ const Header = () => {
                         <Link
                           key={subItem.label}
                           href={subItem.href}
-                          className="block py-2 text-sm text-gray-600 hover:text-primary"
+                          className={`block py-2 text-sm hover:text-[#00AAA5] transition-colors ${pathname === subItem.href ? 'text-[#00AAA5] font-medium' : 'text-gray-600'
+                            }`}
                           onClick={() => setIsMobileMenuOpen(false)}
                         >
                           {subItem.label}

@@ -9,7 +9,7 @@ import routes from '@/app/routes';
 
 const Footer = () => {
   return (
-    <footer className="bg-[#F8F9FF] pt-20 pb-10 text-primary">
+    <footer className="bg-[#F8F9FF] pt-20 pb-10">
       <div className="container mx-auto px-4 lg:px-8">
 
         {/* Top Section */}
@@ -40,7 +40,7 @@ const Footer = () => {
 
           {/* Column 1: Locations */}
           <div className='border-r border-[#E4E4E4] py-10'>
-            <h3 className="font-bold text-[20px] mb-6 tracking-wide">Our Locations</h3>
+            <h3 className="font-bold text-[20px] mb-6">Our Locations</h3>
 
             <div className="mb-6">
               <h4 className="text-primary font-bold mb-2">Bengaluru, India</h4>

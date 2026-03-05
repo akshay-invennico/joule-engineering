@@ -41,7 +41,7 @@ const SubHeader = () => {
 
         <div className="hidden md:flex items-center gap-2">
           <MapPin size={13} className="text-[#808080] shrink-0" />
-          <span>Capital Office, 124 City Road, Vadodara</span>
+          <span>SME-1/24, GIDC HALOL MASWAD, HALOL, Panchmahals, Gujarat</span>
         </div>
       </div>
     </div>

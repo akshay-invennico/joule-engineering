@@ -42,18 +42,11 @@ const Footer = () => {
           <div className='border-r border-[#E4E4E4] py-10'>
             <h3 className="font-bold text-[20px] mb-6">Our Locations</h3>
 
-            <div className="mb-6">
-              <h4 className="text-primary font-bold mb-2">Bengaluru, India</h4>
-              <p className="text-[#808080] text-sm leading-relaxed">
-                21, Rest House Road, Bengaluru,<br /> Karnataka, 560001
-              </p>
-              <div className="w-8 h-[2px] bg-[#00AAA5] mt-3"></div>
-            </div>
-
+          
             <div>
               <h4 className="text-primary font-bold mb-2">Vadodara, India</h4>
               <p className="text-[#808080] text-sm leading-relaxed">
-                14, Subhalaxmi Estate, Makarpura GIDC,<br /> Vadodara, Gujarat, 390010
+                SME-1/24, GIDC HALOL MASWAD, BESIDE HERO MOTOCORP, HALOL, Panchmahals, Gujarat, 389350
               </p>
             </div>
           </div>

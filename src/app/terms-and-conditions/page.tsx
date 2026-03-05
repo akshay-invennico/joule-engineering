@@ -1,13 +1,11 @@
 import React from 'react'
 import Hero from './Hero'
-import Content from '../privacy-policy/Content'
+import Content from './Content'
 
 const page = () => {
   return (
     <div>
       <Hero />
-      <Content />
-      <Content />
       <Content />
     </div>
   )

@@ -10,8 +10,8 @@ interface Data {
 
 const data: Data = {
   title: "Privacy Policy",
-  subtitle: "Effective Date: March 13, 2025",
-  paragraph: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  subtitle: "Effective Date: March 2026",
+  paragraph: "At Joule Engineering Works, we respect your privacy. This Privacy Policy explains how we collect, use, and protect your information when you visit https://jouleengineeringworks.com."
 };
 
 const Hero = () => {

@@ -34,8 +34,9 @@ const Projects = () => {
               Engineered For Success
             </h2>
             <p className="text-[#808080] text-sm md:text-base leading-relaxed max-w-2xl">
-              We have successfully executed a wide range of industrial
-              fabrication projects across sectors.
+              We support projects across oil and gas, petrochemical refineries,
+              chemical complexes, power, fertiliser, pharmaceuticals, food, and
+              related process industries.
             </p>
           </div>
 

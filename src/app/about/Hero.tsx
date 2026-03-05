@@ -69,11 +69,12 @@ const Hero = () => {
 
               <div className="h-[150px] w-px bg-[#E4E4E4]" />
               <p className="max-w-2xl text-base leading-relaxed text-[#808080] sm:text-lg">
-                Joule Engineering Works is a Gujarat-based engineering and
-                manufacturing company specializing in heavy fabrication and
-                process equipment for industrial applications. We support EPC
-                companies, OEMs, and industrial clients with structured
-                engineering practices and disciplined fabrication execution.
+                Joule Engineering Works is a Gujarat based engineering and
+                manufacturing company in India that builds process equipment and
+                heavy fabrication for plant use.
+                <br />
+                We work with EPC teams, OEMs, and industrial units where fit,
+                finish, and inspection readiness cannot be left to chance.
               </p>
             </div>
 

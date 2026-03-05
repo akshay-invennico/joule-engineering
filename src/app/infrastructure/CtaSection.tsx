@@ -28,15 +28,28 @@ const CtaSection = () => {
           <div className="max-w-xl lg:max-w-2xl">
             {/* Title */}
             <h2 className="text-white text-2xl sm:text-3xl md:text-[32px] lg:text-[36px] font-bold leading-tight mb-3 sm:mb-4">
-              Heavy Fabrication Shop Floor
+              Engineered for Heavy & Precision Fabrication
             </h2>
 
             {/* Description */}
             <p className="text-white/80 text-xs sm:text-sm leading-relaxed mb-5 sm:mb-6 max-w-lg">
-              The shop floor is equipped to handle large-dimension and high-weight fabrication projects.
-              It supports simultaneous execution of multiple industrial assemblies without compromising
-              safety or quality. Adequate working space, structured fabrication zones, and material
-              staging areas ensure smooth workflow from raw material preparation to final dispatch.
+              Our facility is structured to support both heavy structural
+              fabrication and precision-engineered components. The shop floor
+              layout ensures smooth material movement, controlled fabrication
+              sequencing, and systematic in-process inspection.
+            </p>
+          <p className="text-white/80 text-xs sm:text-sm leading-relaxed mb-5 sm:mb-6 max-w-lg">
+              Dedicated zones improve workflow efficiency while maintaining
+              safety and quality standards. The infrastructure accommodates
+              large assemblies as well as low-thickness fabrication requiring
+              specialized welding expertise.
+            </p>
+           <p className="text-white/80 text-xs sm:text-sm leading-relaxed mb-5 sm:mb-6 max-w-lg">
+              Close coordination between fabrication and quality teams ensures
+              dimensional accuracy, welding integrity, and streamlined
+              execution. This organized production environment allows us to
+              maintain consistency, minimize delays, and deliver reliable
+              fabrication outcomes for industrial applications.
             </p>
 
             {/* CTA Link */}

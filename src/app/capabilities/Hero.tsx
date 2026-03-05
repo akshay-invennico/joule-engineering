@@ -1,5 +1,5 @@
 import React from 'react';
-import HeroImg from '../../../public/assets/capabilities-hero-img.png'
+import HeroImg from '../../../public/assets/capabilities-hero-img.png';
 import Image from 'next/image';
 
 const Hero = () => {
@@ -21,7 +21,11 @@ const Hero = () => {
             Engineering Capabilities
           </h1>
           <p className="text-[#808080] text-sm md:text-base lg:text-lg max-w-3xl ">
-            Joule Engineering Works delivers engineering-driven fabrication solutions tailored to complex industrial requirements. Our approach integrates technical precision, code compliance, and practical execution understanding to support EPC companies and industrial clients.
+            At Joule Engineering Works, engineering is not separate from
+            fabrication. We design the build path before metal is cut, so
+            fit-up, handling, welding, and inspection stay under control. This
+            approach suits EPC teams and plant owners who need equipment
+            delivered ready for installation, not rework.
           </p>
         </div>
       </div>

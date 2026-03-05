@@ -7,11 +7,11 @@ import SubHeading from '../subheading/SubHeading';
 
 const Excellence = () => {
   const capabilities = [
-    { name: 'Strong coordination between engineering and fabrication teams' },
-    { name: 'Capability to support complex industrial assemblies' },
-    { name: 'Experience serving reputed EPC and heavy engineering clients' },
-    { name: 'Structured documentation and inspection alignment' },
-    { name: 'Execution-focused engineering approach' },
+    { name: 'Engineering and execution coordination across teams and partners' },
+    { name: 'Capability to support heavy assemblies and long-length components' },
+    { name: 'Experience across EPC and industrial customers in Gujarat and overseas supply' },
+    { name: 'Documentation and inspection alignment planned early, not after fabrication' },
+    { name: 'A practical engineering approach focused on buildability and delivery' },
   ];
 
   return (
@@ -24,7 +24,7 @@ const Excellence = () => {
               Our Engineering Strength
             </h2>
             <p className="text-[#808080] text-sm md:text-base">
-              Our engineering capability enables us to deliver reliable, fabrication-ready solutions that meet industrial performance and compliance expectations.
+             We bring engineering strength where it matters most, in the parts that decide site fit and long-term performance. Typical scope includes pressure vessels, outer jackets, pump base frames, and fabrication attachments built to drawing control.
             </p>
           </div>
         </div>

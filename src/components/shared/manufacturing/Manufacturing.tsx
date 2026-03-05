@@ -14,37 +14,37 @@ const Manufacturing = () => {
     {
       title: 'Heavy Fabrication Floor',
       description:
-        'Our shop floor is designed for heavy-duty fabrication supporting large and complex industrial structures. It enables safe handling of oversized components.',
+        'Our facility includes an overhead crane span of 18 mtr with 8.5 mtr clear height, supporting safe handling for large and heavy components.',
       icon: fabrication,
     },
     {
       title: 'Welding & Assembly',
       description:
-        'Advanced welding and assembly setups ensure strong, precise, and code-compliant fabrication across a wide range of industrial applications.',
+        'Welding capability includes SAW, MIG, SMAW, TIG, and AC DC aluminium welding, supporting strong joints and controlled assembly for inspection readiness.',
       icon: welding,
     },
     {
       title: 'Machining & Fit-Up',
       description:
-        'In-house machining and fit-up capabilities allow accurate alignment, reduced dependencies, and better control over fabrication quality and time.',
+        'Fit-up is supported through precision machining coordination for drilling, milling, tapping, boring, facing, and interface preparation where required.',
       icon: setting,
     },
     {
       title: 'Cranes & Material Handling',
       description:
-        'High-capacity cranes and material handling systems support efficient movement of heavy components while maintaining safety and operational control.',
+        'Handling includes overhead crane capacity and workshop movement planning to maintain workflow control, safety, and steady execution during fabrication.',
       icon: crane,
     },
     {
       title: 'Skilled Workforce',
       description:
-        'Our experienced workforce brings deep expertise in industrial fabrication, inspection readiness, and execution aligned with project specifications.',
+        'Skilled manpower supports challenging fabrication work, with a focus on workmanship, inspection readiness, and delivery aligned to client requirements.',
       icon: workforce,
     },
     {
-      title: 'Skilled Workforce',
+      title: 'ISO-Aligned Quality Management',
       description:
-        'Our experienced workforce brings deep expertise in industrial fabrication, inspection readiness, and execution aligned with project specifications.',
+        'Quality management follows a structured system aligned to ISO 9001:2015 practices, kept under the supervision of top management.',
       icon: workforce,
     },
   ];
@@ -65,8 +65,7 @@ const Manufacturing = () => {
                 Manufacturing Strength & Infrastructure
               </h2>
               <p className="text-[#808080] text-sm md:text-base leading-relaxed max-w-2xl text-center md:text-left">
-                Our manufacturing facility is equipped to handle heavy, complex,
-                and high-precision fabrication work.
+             Our manufacturing unit is set up for heavy fabrication with handling systems, welding capability, and the space needed to build large equipment safely and accurately.
               </p>
             </div>
 
@@ -82,7 +81,7 @@ const Manufacturing = () => {
                 {/* Text Wrapper */}
                 <span className="relative z-10 flex items-center h-full pl-[56px] pr-[24px] group-hover:pl-[24px] group-hover:pr-[56px] transition-all duration-500 ease-in-out">
                   <span className="text-base font-semibold text-primary group-hover:text-white transition-colors duration-500 ease-in-out">
-                    View Infrastructure
+                    Explore Our Infrastructure
                   </span>
                 </span>
 

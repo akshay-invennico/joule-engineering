@@ -1,36 +1,36 @@
 'use client';
 
-import SubHeading from "@/components/shared/subheading/SubHeading";
-import { useEffect, useState } from "react";
-import operational1 from "../../../public/assets/infrastructure/operational1.jpg";
-import operational2 from "../../../public/assets/infrastructure/operational2.jpg";
-import operational3 from "../../../public/assets/infrastructure/operational3.jpg";
-import operational4 from "../../../public/assets/infrastructure/operational4.jpg";
-import { ArrowLeft, ArrowRight, CircleX, Cross, Plus } from "lucide-react";
+import SubHeading from '@/components/shared/subheading/SubHeading';
+import { useEffect, useState } from 'react';
+import operational1 from '../../../public/assets/infrastructure/operational1.jpg';
+import operational2 from '../../../public/assets/infrastructure/operational2.jpg';
+import operational3 from '../../../public/assets/infrastructure/operational3.jpg';
+import operational4 from '../../../public/assets/infrastructure/operational4.jpg';
+import { ArrowLeft, ArrowRight, CircleX, Cross, Plus } from 'lucide-react';
 
 const data = [
   {
-    title: "High-Capacity Lifting & Handling Systems",
+    title: 'Lifting & Material Handling',
     description:
-      "The facility is equipped with heavy-duty cranes and material handling systems to manage oversized and high-weight components. These systems enable safe lifting, positioning, and structural alignment during fabrication and assembly stages.",
+      'The facility is equipped with a 10 MT overhead crane and welding rotators with 10 MT and 20 MT capacities. These systems enable safe lifting, positioning, and rotation of heavy assemblies during fabrication and welding operations. Efficient material handling ensures stability, safety compliance, and accuracy throughout production.',
     image: operational1,
   },
   {
-    title: "Fabrication Machinery & Technical Equipment",
+    title: 'Cutting & Forming Systems',
     description:
-      "Advanced fabrication machinery ensures precision manufacturing and structural assembly with high efficiency and operational safety standards.",
+      'Our cutting and forming infrastructure includes a plate-bending machine capable of handling 2500 mm width and 25 mm thickness, along with plasma-cutting systems that process materials up to 75 mm thickness. Oxy-fuel cutting, circular band saws, and magnetic drilling machines support accurate shaping and dimensional control for structural and plate components.',
     image: operational2,
   },
   {
-    title: "Material Storage & Traceability Systems",
+    title: 'Advanced Welding Infrastructure',
     description:
-      "Efficient storage systems allow systematic traceability and optimized material handling across departments.",
+      'We operate multiple welding processes, including SAW (1000 Amps), MIG/SMAW (400 Amps), TIG (400 Amps), and AC/DC aluminium welding (500 Amps). This multi-process capability enables fabrication across mild steel, carbon steel, stainless steel, duplex stainless steel, and aluminium with consistent weld quality and structural strength.',
     image: operational3,
   },
   {
-    title: "Strategic Industrial Infrastructure",
+    title: 'Testing & Processing Systems',
     description:
-      "Purpose-built infrastructure supports large-scale industrial operations with compliance and safety integration.",
+      'Our infrastructure includes hydro testing pumps, a 200-ton hydraulic press, electrode and flux heating ovens, portable ovens, and industrial grinding equipment. These systems support inspection, finishing, and validation of fabricated assemblies before dispatch, ensuring structural integrity and compliance with specifications.',
     image: operational4,
   },
 ];
@@ -48,8 +48,8 @@ export default function Operational() {
     };
 
     handleResize();
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
   }, []);
 
   const maxIndex = data.length - 1;
@@ -76,8 +76,11 @@ export default function Operational() {
         <div>
           <SubHeading text="Operational Infrastructure" color="#00AAA5" />
           <h2 className="text-2xl md:text-[36px] font-semibold text-primary">
-            Integrated Systems, Equipment & Compliance Framework
+            Advanced Systems Supporting Controlled Fabrication Execution
           </h2>
+          <p className="text-[#808080] text-sm mt-2">
+           Our operational strength is built on a combination of heavy-duty machinery, precision fabrication systems, advanced welding infrastructure, and integrated testing equipment that collectively support diverse industrial fabrication requirements.
+          </p>
         </div>
 
         <div className="flex justify-end gap-3 mt-8">
@@ -111,7 +114,7 @@ export default function Operational() {
               className="relative rounded-xl overflow-hidden shrink-0 group"
               style={{
                 width: `${100 / perView}%`,
-                height: "420px",
+                height: '420px',
               }}
             >
               <div
@@ -120,8 +123,6 @@ export default function Operational() {
               />
 
               <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/40 to-transparent" />
-
-
 
               <div className="absolute bottom-0 p-6 text-white z-10">
                 <h3 className="text-lg font-semibold mb-3 max-w-[60%]">
@@ -132,14 +133,19 @@ export default function Operational() {
                   onClick={() => toggleCard(i)}
                   className="absolute right-5 top-1/2 -translate-y-1/2 w-10 h-10 bg-white text-black rounded-full flex items-center justify-center shadow-md z-10 transition hover:scale-110 cursor-pointer"
                 >
-                  {activeCard === i ? <CircleX size={20} color="#0063A2" /> : <Plus size={20} color="#0063A2" />}
+                  {activeCard === i ? (
+                    <CircleX size={20} color="#0063A2" />
+                  ) : (
+                    <Plus size={20} color="#0063A2" />
+                  )}
                 </button>
 
                 <div
-                  className={`transition-all duration-500 overflow-hidden ${activeCard === i
-                    ? "max-h-40 opacity-100"
-                    : "max-h-0 opacity-0"
-                    }`}
+                  className={`transition-all duration-500 overflow-hidden ${
+                    activeCard === i
+                      ? 'max-h-40 opacity-100'
+                      : 'max-h-0 opacity-0'
+                  }`}
                 >
                   <p className="text-sm opacity-90 max-w-md">
                     {item.description}

@@ -77,7 +77,7 @@ const LeadForm = () => {
             Get In Touch With Us.
           </h2>
           <p className="text-[#808080] max-w-2xl">
-            Our advanced facilities and expert team enable us to deliver customized solutions for your unique engineering needs.
+            Our expert team supports engineering coordination and fabrication execution to deliver equipment built to your project requirements.
           </p>
         </div>
 

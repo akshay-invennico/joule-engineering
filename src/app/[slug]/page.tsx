@@ -34,17 +34,16 @@ const Page = async ({ params }: PageProps) => {
         images={project.images}
         title={project.title}
         client={project.client}
-        projectType={project.projectType}
-        description={project.description}
+        projectType={project?.projectType || ""}
+        // description={project?.description}
       />
       <ProjectInfo
-        longDescription={project.longDescription}
-        overview={project.overview}
-        technicalSpecifications={project.technicalSpecifications}
-        executionScope={project.executionScope}
-        materialsCompliance={project.materialsCompliance}
+        // longDescription={project?.longDescription}
+        // overview={project?.overview || undefined}
+        technicalSpecifications={project?.technicalSpecifications}
+        // executionScope={project?.executionScope}
+        // materialsCompliance={project?.materialsCompliance}
       />
-      <FaqSection />
       <CtaSection />
     </main>
   );

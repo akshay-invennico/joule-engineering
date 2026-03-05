@@ -16,28 +16,28 @@ const contactCards = [
     title: 'Sales Inquiry',
     description:
       'For project discussions, quotations, and new fabrication requirements.',
-    email: 'sales@jouleengineering.com',
+    email: 'joule.engg@gmail.com',
     icon: MessageCircle,
   },
   {
     title: 'Technical Support',
     description:
       'For drawing clarifications, engineering coordination, and specification alignment.',
-    email: 'engineering@jouleengineering.com',
+    email: 'joule.engg@gmail.com',
     icon: Wrench,
   },
   {
     title: 'Customer Service',
     description:
       'For order inquiries, shipping questions, and returns.',
-    email: 'service@jouleengineering.com',
+    email: 'joule.engg@gmail.com',
     icon: Headphones,
   },
   {
     title: 'Partnership Opportunities',
     description:
       'For collaboration inquiries, partnerships, and business development.',
-    email: 'partnerships@jouleengineering.com',
+    email: 'joule.engg@gmail.com',
     icon: Handshake,
   },
 ];

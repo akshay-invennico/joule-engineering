@@ -135,7 +135,7 @@ const Footer = () => {
                 </div>
                 <div>
                   <p className="text-gray-400">Call</p>
-                  <a href="tel:+8801790224045" className="text-primary font-bold text-lg hover:underline">+880 1790 224045</a>
+                  <a href="tel:+8801790224045" className="text-primary font-bold text-lg hover:underline">9879595031 , 7203000537</a>
                 </div>
               </div>
 
@@ -145,7 +145,7 @@ const Footer = () => {
                 </div>
                 <div>
                   <p className="text-gray-400">Mail</p>
-                  <a href="mailto:info@example.com" className="text-primary font-bold text-lg hover:underline">info@example.com</a>
+                  <a href="mailto:joule.engg@gmail.com" className="text-primary font-bold text-lg hover:underline">joule.engg@gmail.com</a>
                 </div>
               </div>
 
@@ -155,7 +155,7 @@ const Footer = () => {
                 </div>
                 <div>
                   <p className="text-gray-400">Map Direction</p>
-                  <a href="#" className="text-primary font-bold text-lg hover:underline">Show on Map</a>
+                  <a href="https://www.google.com/maps/place/JOULE+ENGINEERING+WORKS/@22.5730231,73.4976138,17z/data=!3m1!4b1!4m6!3m5!1s0x396081b7facc4ba3:0x7433d66c38d96ea9!8m2!3d22.5730231!4d73.5001887!16s%2Fg%2F11p0w2_bl6?entry=ttu&g_ep=EgoyMDI2MDMwMi4wIKXMDSoASAFQAw%3D%3D" className="text-primary font-bold text-lg hover:underline">Show on Map</a>
                 </div>
               </div>
 

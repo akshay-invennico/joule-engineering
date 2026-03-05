@@ -27,15 +27,15 @@ const SubHeader = () => {
     >
       <div className="container mx-auto px-4 lg:px-8 flex flex-row justify-between items-center">
         <div className="flex items-center gap-3 sm:gap-6">
-          <a href="mailto:info@example.com" className="flex items-center gap-1.5">
+          <a href="mailto:joule.engg@gmail.com" className="flex items-center gap-1.5">
             <Mail size={13} className="text-[#808080] shrink-0" />
-            <span className="hidden sm:inline">info@example.com</span>
+            <span className="hidden sm:inline">joule.engg@gmail.com</span>
             <span className="sm:hidden">Email</span>
           </a>
           <span className="text-[#808080]">/</span>
           <a href="tel:+8801790224045" className="flex items-center gap-1.5">
             <Phone size={13} className="text-[#808080] shrink-0" />
-            <span>+880 1790 224045</span>
+            <span>9879595031 , 7203000537</span>
           </a>
         </div>
 

@@ -6,6 +6,7 @@ import welding from '../../../../public/icons/manufacturing/welding.svg';
 import setting from '../../../../public/icons/manufacturing/setting.svg';
 import crane from '../../../../public/icons/manufacturing/crane.svg';
 import workforce from '../../../../public/icons/manufacturing/workforce.svg';
+import iso from '../../../../public/icons/manufacturing/iso.svg';
 import Image from 'next/image';
 import SubHeading from '../subheading/SubHeading';
 
@@ -45,7 +46,7 @@ const Manufacturing = () => {
       title: 'ISO-Aligned Quality Management',
       description:
         'Quality management follows a structured system aligned to ISO 9001:2015 practices, kept under the supervision of top management.',
-      icon: workforce,
+      icon: iso,
     },
   ];
 

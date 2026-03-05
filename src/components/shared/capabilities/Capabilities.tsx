@@ -39,11 +39,10 @@ const Capabilities = () => {
               color="white"
             />
             <h2 className="text-white text-3xl md:text-4xl lg:text-[36px] font-bold mb-5">
-              Engineering Capabilities
+              Design, Engineering & Fabrication Excellence
             </h2>
             <p className="text-white text-sm md:text-base max-w-2xl">
-              We provide end-to-end engineering support aligned with project
-              specifications, codes, and manufacturing expertise.
+             Engineering support that connects design intent to build reality, with inputs that improve manufacturability and site fit.
             </p>
           </div>
           <div className="mt-12 flex justify-end">

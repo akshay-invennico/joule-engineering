@@ -31,10 +31,10 @@ const Projects = () => {
               color="#00AAA5"
             />
             <h2 className="text-primary text-3xl md:text-4xl lg:text-[36px] font-bold leading-tight mb-5">
-              Delivered Work Highlights
+             Engineered For Success
             </h2>
             <p className="text-[#808080] text-sm md:text-base leading-relaxed max-w-2xl">
-              We have executed a wide range of fabricated equipment and assemblies across industries, including pressure vessels, cryogenic outer jackets, pump base frames, structural frames, and plant components.
+             We support projects across oil and gas, petrochemical refineries, chemical complexes, power, fertiliser, pharmaceuticals, food, and related process industries.
             </p>
           </div>
 

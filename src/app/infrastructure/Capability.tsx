@@ -3,7 +3,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { ArrowRight } from 'lucide-react';
-import story from '../../../public/assets/infrastructure/infra2.png'
+import story from '../../../public/assets/infrastructure/infra2.png';
 import SubHeading from '@/components/shared/subheading/SubHeading';
 import Link from 'next/link';
 
@@ -12,32 +12,48 @@ const Capability = () => {
     <section className="w-full bg-white py-16 md:py-24">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center mb-20">
-
           <div className="relative mt-12 lg:mt-0">
             <div className="relative rounded-3xl overflow-hidden">
               <div className="relative w-full aspect-4/5">
-                <Image
-                  src={story}
-                  alt="Engineering Team"
-                  fill
-                  className=""
-                />
+                <Image src={story} alt="Engineering Team" fill className="" />
               </div>
             </div>
           </div>
 
           <div className="relative">
             <div className="mb-3">
-              <SubHeading text="Infrastructure capability" color='#00AAA5' />
+              <SubHeading text="Infrastructure capability" color="#00AAA5" />
             </div>
 
             <h2 className="text-primary text-3xl md:text-4xl lg:text-[42px] font-bold leading-tight mb-6">
-              Equipped to Deliver Complex Industrial Fabrication
+              Integrated Infrastructure for Precision & Heavy-Duty Fabrication
             </h2>
 
             <div className="space-y-2 mb-5 text-[#808080] text-sm md:text-base leading-relaxed">
               <p>
-                Our infrastructure is built to support technically demanding fabrication requirements with reliability and precision. From heavy structural assemblies to process equipment components, we maintain operational control across all stages.
+                Our infrastructure enables efficient execution of diverse
+                industrial fabrication requirements with controlled precision
+                and consistency.
+              </p>
+              <p>
+                The facility supports heavy structural fabrication, skid base
+                frame manufacturing, tank and shell fabrication, saddle and
+                support structure production, and specialized low-thickness
+                welding applications. With the ability to process materials such
+                as mild steel, carbon steel, stainless steel, duplex stainless
+                steel, aluminium, and titanium, we maintain flexibility across
+                project specifications.
+              </p>
+              <p>
+                The combination of lifting systems, cutting and forming
+                equipment, advanced welding processes, and in-house testing
+                ensures a smooth transition from raw material to finished
+                assembly.
+              </p>
+              <p>
+                Built for both strength and precision, our infrastructure
+                supports quality-driven manufacturing with dependable
+                performance and optimized turnaround timelines.
               </p>
             </div>
 
@@ -51,7 +67,7 @@ const Capability = () => {
               {/* Text Wrapper */}
               <span className="relative z-10 flex items-center h-full pl-[56px] pr-[24px] group-hover:pl-[24px] group-hover:pr-[56px] transition-all duration-500 ease-in-out">
                 <span className="text-base font-semibold text-primary group-hover:text-white transition-colors duration-500 ease-in-out">
-                  Discuss Your Infrastructure Requirements
+                  Contact Our Team
                 </span>
               </span>
 
@@ -61,7 +77,6 @@ const Capability = () => {
               </span>
             </Link>
           </div>
-
         </div>
       </div>
     </section>

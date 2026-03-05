@@ -25,7 +25,7 @@ const Hero = () => {
           </h1>
 
           <p className="text-white text-base md:text-lg mb-5 font-bold max-w-5xl leading-relaxed">
-            Joule Engineering Works has built long-term associations with reputed engineering, EPC, and industrial manufacturing companies across India. Our client relationships are founded on execution reliability, quality compliance, and disciplined project delivery.
+          Joule Engineering Works supports EPC and industrial customers through delivering engineering work that is defined by drawings, material grades, dimensional control, and inspection readiness. 
           </p>
         </div>
       </div>

@@ -18,16 +18,19 @@ const Facility = () => {
             </div>
 
             <h2 className="text-[#0063A2] text-3xl md:text-4xl lg:text-[42px] font-bold leading-tight mb-6">
-              Integrated Manufacturing Infrastructure
+            Modern Manufacturing Facility
+
             </h2>
 
             <div className="space-y-2 mb-5 text-[#808080] text-sm md:text-base leading-relaxed">
               <p>
-                Joule Engineering Works operates a structured manufacturing facility designed to support heavy fabrication and industrial equipment assembly. The infrastructure is organized to ensure workflow efficiency, safety compliance, and execution accuracy.
+                Our manufacturing unit is located in Halol-Maswad GIDC, Gujarat, within the Delhi–Mumbai Industrial Corridor, offering both strategic connectivity and industrial ecosystem advantages.
               </p>
               <p>
-                Our layout enables systematic material movement, fabrication sequencing, and inspection readiness aligned with project timelines and industrial standards.
+               The facility is developed across approximately 11,000 sq. ft. of land, with over 7,000 sq. ft. of covered fabrication space. The workshop layout is structured for optimized production flow, including dedicated areas for cutting, bending, welding, assembly, inspection, and dispatch.
               </p>
+              <p>An 18-meter span overhead crane with high clear height ensures safe handling of heavy fabrication jobs. The shop floor is organized to accommodate large structural assemblies while maintaining accessibility, safety compliance, and operational efficiency.</p>
+              <p>Our infrastructure is continuously upgraded to align with evolving industry standards and technological advancements.</p>
             </div>
 
             <Link

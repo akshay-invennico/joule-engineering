@@ -34,7 +34,7 @@ const Hero = () => {
             Critical Industrial Applications
           </h1>
           <p className="text-gray-200 text-sm sm:text-base md:text-xl max-w-2xl mb-5 leading-relaxed">
-            Delivering precision-engineered process equipment and heavy fabrication for EPC companies and industrial leaders across India and overseas.
+            We deliver reliable engineering, fabrication and process equipment solutions backed by strong engineering expertise and modern manufacturing infrastructure.
           </p>
 
           <Link

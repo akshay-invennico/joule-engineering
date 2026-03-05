@@ -21,11 +21,11 @@ const Hero = () => {
       <div className="container mx-auto px-4 lg:px-8 relative z-10 text-white">
         <div className="max-w-4xl pt-10">
           <h1 className="text-4xl md:text-5xl lg:text-[44px] font-bold mb-5 leading-tight tracking-wide">
-            Infrastructure & Facilities
+          Built for Precision. Powered by Engineering Excellence.
           </h1>
 
           <p className="text-white text-base md:text-lg mb-5 font-bold max-w-2xl leading-relaxed">
-            Joule Engineering Works operates a structured manufacturing facility designed to support heavy fabrication and industrial equipment assembly. The infrastructure is organized to ensure workflow efficiency, safety compliance, and execution accuracy.
+            Joule Engineering Works operates a purpose-built manufacturing facility designed to support precision fabrication for process industries. With advanced machinery, structured workflow zones, and heavy-duty handling systems, our infrastructure enables safe, efficient, and high-quality production of industrial equipment components.
           </p>
         </div>
       </div>

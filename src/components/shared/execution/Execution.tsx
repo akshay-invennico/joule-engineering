@@ -12,17 +12,17 @@ const Execution = () => {
     {
       step: '01',
       title: 'Requirement Analysis',
-      description: 'We begin by reviewing technical specifications, approved drawings, and project documentation to understand scope, standards, and constraints.'
+      description: 'We study drawings, datasheets, and scope notes to confirm interfaces, tolerances, inspection points, and delivery constraints before planning fabrication.'
     },
     {
       step: '02',
       title: 'Engineering & Detailing',
-      description: 'Our team prepares and verifies fabrication drawings, structural layouts, and technical documentation aligned with project and code requirements.'
+      description: 'We prepare fabrication-ready drawings, part lists, and documentation inputs so execution is clear for all stakeholders.'
     },
     {
       step: '03',
       title: 'Compliance & Verification',
-      description: 'Material traceability, dimensional checks, and inspection test plans are aligned to ensure readiness for client and third-party approvals.'
+      description: 'Material traceability, dimensional checks, and inspection readiness are maintained through execution, so customer and third party approvals can proceed without delay.'
     }
   ];
 

@@ -29,7 +29,7 @@ const ExecutionCta = () => {
           </h2>
 
           <p className="text-white text-base mb-6 w-full">
-            Connect with our engineering team to review technical specifications, fabrication scope, and compliance requirements.
+           Share your drawings or scope. We will review the build approach, material needs, inspection expectations, and delivery plan with your team.
           </p>
 
           <Link

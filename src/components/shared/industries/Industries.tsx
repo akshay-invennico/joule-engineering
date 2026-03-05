@@ -17,42 +17,42 @@ const industries = [
   {
     icon: <FlaskConical size={48} strokeWidth={1.5} />,
     title: 'Chemical & Process Industries',
-    description: 'Meeting the rigorous demands of the chemical sector with custom-engineered equipment and specialized fabrication services. Focus on safety and regulatory compliance.'
+    description: 'Custom equipment built to process duty, material selection, and inspection requirements, with fabrication control from shop to dispatch.'
   },
   {
     icon: <Zap size={48} strokeWidth={1.5} />,
     title: 'Power & Energy',
-    description: 'Meeting the rigorous demands of the chemical sector with custom-engineered equipment and specialized fabrication services. Focus on safety and regulatory compliance.'
+    description: 'Fabrication support for plant equipment and structural items where execution discipline, safety, and compliance expectations are non-negotiable.'
   },
   {
     icon: <Droplet size={48} strokeWidth={1.5} />,
     title: 'Oil & Gas',
-    description: 'Providing robust and efficient solutions for power generation, transmission, and distribution projects. Expertise in high-pressure piping and critical components.'
+    description: 'Process equipment and skids for oil and gas duties with controlled welding, fit-up, and documentation readiness for inspection steps.'
   },
   {
     icon: <Sun size={48} strokeWidth={1.5} />,
     title: 'Sustainable Solutions',
-    description: 'Supporting the extraction, refining, and transportation of oil and gas resources with durable and reliable fabricated equipment. Adherence to stringent industry standards.'
+    description: 'Fabrication support for utility and treatment-related projects with a focus on dependable operation, maintainability, and practical site integration.'
   },
   {
     icon: <Settings size={48} strokeWidth={1.5} />,
     title: 'EPC & Heavy Engineering',
-    description: 'Delivering infrastructure solutions for water, wastewater, and energy distribution. Expertise in large-scale fabrication and adherence to strict quality standards.'
+    description: 'Working with EPC teams from design inputs through manufacturing and delivery planning, to reduce site corrections and keep installation smoother.'
   },
   {
     icon: <Factory size={48} strokeWidth={1.5} />,
     title: 'Industrial Manufacturing',
-    description: 'Partnering with EPC companies to deliver comprehensive fabrication solutions for large-scale industrial projects. Expertise in project management and on-time delivery.'
+    description: 'Manufacturing support with controlled processes and consistent workmanship, backed by in-house and partner facilities for machining and fit-up.'
   },
   {
     icon: <Wrench size={48} strokeWidth={1.5} />,
     title: 'Infrastructure & Utilities',
-    description: 'Enabling eco-friendly industrial practices through fabrication equipment for waste management, water treatment, and renewable energy projects. Commitment to sustainability.'
+    description: 'Fabrication for industrial infrastructure items where safety, access, and long service life are important acceptance factors.'
   },
   {
     icon: <Atom size={48} strokeWidth={1.5} />,
-    title: 'Chemical & Process Industries',
-    description: 'Supplying precision-engineered components and equipment to support diverse manufacturing processes. Focus on quality, reliability, and process optimization.'
+    title: 'Pharmaceuticals & Food',
+    description: 'Fabrication support for process environments that demand clean workmanship, controlled execution, and compliance with project specifications.'
   }
 ];
 

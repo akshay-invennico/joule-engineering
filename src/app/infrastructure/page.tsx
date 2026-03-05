@@ -3,8 +3,8 @@ import Hero from './Hero'
 import Facility from './Facility'
 import CtaSection from './CtaSection'
 import Capability from './Capability'
-import FaqSection from '@/components/shared/faq/FaqSection'
 import Operational from './Operational'
+import FaqSection from '@/components/shared/faq/FaqSection';
 
 const page = () => {
   return (

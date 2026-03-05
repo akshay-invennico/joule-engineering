@@ -3,13 +3,13 @@
 import React from 'react';
 import Image from 'next/image';
 import { ArrowRight, ChevronRight } from 'lucide-react';
-import story from '../../../../public/assets/story.png'
+import story from '../../../../public/assets/story.png';
 
-import lt from '../../../../public/icons/L&T.svg'
-import simem from '../../../../public/icons/simem.svg'
-import godrej from '../../../../public/icons/godrej.svg'
-import ITT from '../../../../public/icons/ITT.svg'
-import thermax from '../../../../public/icons/thermax.svg'
+import lt from '../../../../public/icons/L&T.svg';
+import simem from '../../../../public/icons/simem.svg';
+import godrej from '../../../../public/icons/godrej.svg';
+import ITT from '../../../../public/icons/ITT.svg';
+import thermax from '../../../../public/icons/thermax.svg';
 import SubHeading from '../subheading/SubHeading';
 import Link from 'next/link';
 import routes from '@/app/routes';
@@ -38,18 +38,20 @@ const Story = () => {
             </div>
 
             <h2 className="text-[#0063A2] text-3xl md:text-4xl lg:text-[42px] font-bold leading-tight mb-6">
-              Combining Engineering Industry, And Factory Expertise.
+              Engineering Expertise Built on Experience, And Reliability.
             </h2>
 
             <div className="space-y-2 mb-5 text-[#808080] text-sm md:text-base leading-relaxed">
               <p>
-                We are a team of dedicated and experienced engineers who have been serving
-                clients in the fabrication and process equipment for industrial applications.
+                Joule Engineering Works is a Gujarat-based engineering company
+                promoted by experienced mechanical professionals with hands-on
+                expertise in fabrication, design, production, and project
+                execution.
               </p>
               <p>
-                With industry know-how and a rich mix of manufacturing and engineering capability, we
-                deliver precision-engineered solutions that meet the most stringent quality standards
-                and specifications.
+                Our approach integrates detailed engineering, manufacturing,
+                in-process quality control, testing, and delivery under one
+                structured system.
               </p>
             </div>
 
@@ -83,8 +85,16 @@ const Story = () => {
                         d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0"
                       />
                     </defs>
-                    <text fontSize="11.5" fontWeight="500" letterSpacing="2px" fill="#000000">
-                      <textPath xlinkHref="#circlePath" className="uppercase font-medium">
+                    <text
+                      fontSize="11.5"
+                      fontWeight="500"
+                      letterSpacing="2px"
+                      fill="#000000"
+                    >
+                      <textPath
+                        xlinkHref="#circlePath"
+                        className="uppercase font-medium"
+                      >
                         Brand • Strategy • Design •
                       </textPath>
                     </text>
@@ -94,7 +104,16 @@ const Story = () => {
                 <div className="absolute w-16 h-16 md:w-20 md:h-20 rounded-full border border-[#233AFF33] flex items-center justify-center bg-white">
                   <div className="flex flex-col items-center justify-center text-[#0063A2]">
                     <div className="w-2 h-2 bg-[#0063A2] rounded-full mb-1"></div>
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
                       <path d="M12 5v14" />
                       <path d="M19 12l-7 7-7-7" />
                     </svg>
@@ -118,8 +137,8 @@ const Story = () => {
 
             <div className="mt-[38px] text-center lg:text-left">
               <p className="text-[#808080] text-base leading-relaxed">
-                Our work is defined by unwavering reliability, unrivaled expertise, adherence to standards,
-                and a commitment to long-term client relationships.
+                We provide end-to-end manufacturing support with a strong focus
+                on quality, precision, and timely delivery.
               </p>
             </div>
           </div>
@@ -132,10 +151,7 @@ const Story = () => {
 
           <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8 md:gap-12 items-center justify-items-center mb-8">
             {clientLogos.map((client, index) => (
-              <div
-                key={index}
-                className="relative grayscale"
-              >
+              <div key={index} className="relative grayscale">
                 <Image
                   src={client.logo}
                   alt={client.name}
@@ -146,7 +162,10 @@ const Story = () => {
           </div>
 
           <div className="text-center">
-            <Link href={routes.clients} className="inline-flex items-center gap-2 text-primary font-semibold text-sm hover:gap-3 transition-all">
+            <Link
+              href={routes.clients}
+              className="inline-flex items-center gap-2 text-primary font-semibold text-sm hover:gap-3 transition-all"
+            >
               <span>View All Clients</span>
               <ChevronRight size={18} />
             </Link>

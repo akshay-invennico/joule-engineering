@@ -4,8 +4,8 @@ import Cards from '@/components/shared/capabilities/Cards';
 import Excellence from '@/components/shared/capabilities/Excellence';
 import Execution from '@/components/shared/execution/Execution';
 import ExecutionCta from '@/components/shared/execution/ExecutionCta';
-import FaqSection from '@/components/shared/faq/FaqSection';
 import LeadForm from '@/components/shared/leadform/LeadForm';
+import FaqSection from '@/components/shared/faq/FaqSection';
 
 const page = () => {
   return (
@@ -16,7 +16,7 @@ const page = () => {
       <Execution />
       <ExecutionCta />
       <LeadForm />
-      <FaqSection />
+      <FaqSection/>
     </div>
   );
 };

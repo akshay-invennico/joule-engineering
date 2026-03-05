@@ -5,6 +5,7 @@ import Excellence from '@/components/shared/capabilities/Excellence';
 import Execution from '@/components/shared/execution/Execution';
 import ExecutionCta from '@/components/shared/execution/ExecutionCta';
 import LeadForm from '@/components/shared/leadform/LeadForm';
+import FaqSection from '@/components/shared/faq/FaqSection';
 
 const page = () => {
   return (
@@ -15,6 +16,7 @@ const page = () => {
       <Execution />
       <ExecutionCta />
       <LeadForm />
+      <FaqSection/>
     </div>
   );
 };

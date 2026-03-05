@@ -4,6 +4,7 @@ import Facility from './Facility'
 import CtaSection from './CtaSection'
 import Capability from './Capability'
 import Operational from './Operational'
+import FaqSection from '@/components/shared/faq/FaqSection';
 
 const page = () => {
   return (
@@ -13,6 +14,7 @@ const page = () => {
       <CtaSection />
       <Operational />
       <Capability />
+      <FaqSection />
     </div>
   )
 }

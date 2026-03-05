@@ -11,13 +11,13 @@ import SubHeading from '../subheading/SubHeading';
 const Capabilities = () => {
   const capabilities = [
     {
-      name: 'Chemical Mixing Vessel – 4 KL',
-      href: '/chemical-mixing-vessel-4kl',
+      name: 'Cryogenic Outer Jacket ',
+      href: '/cryogenic-outer-jacket ',
     },
-    { name: 'Storage Vessel', href: '/storage-vessel' },
-    { name: 'Vacuum Vessel', href: '/vacuum-vessel' },
-    { name: 'Industrial Frame Structure', href: '/industrial-frame-structure' },
-    { name: 'Heat Exchanger Shell', href: '/heat-exchanger-shell' },
+    { name: 'Pump Base Frame', href: '/pump-base-frame' },
+    { name: 'Skirt, Saddle, Fixture, External Attachment, Foundation Template', href: '/skirt-saddle-fixture-external-attachment-foundation-template' },
+    { name: 'Drum Internal & External Attachment, TPT Frame', href: '/drum-internal-external-attachment-tpt-frame' },
+    { name: 'Dust Cover, Base Frame, Conveyor Frame, Trestle Frame', href: '/dust-cover-base-frame-conveyor-frame-trestle-frame' },
   ];
 
   return (

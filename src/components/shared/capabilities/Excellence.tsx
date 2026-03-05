@@ -24,7 +24,7 @@ const Excellence = () => {
               Our Engineering Strength
             </h2>
             <p className="text-[#808080] text-sm md:text-base">
-             We bring engineering strength where it matters most, in the parts that decide site fit and long-term performance. Typical scope includes pressure vessels, outer jackets, pump base frames, and fabrication attachments built to drawing control.
+             We bring engineering strength where it matters most, in the parts that decide site fit and long-term performance. Typical scope includes pressure vessels, Outer Jackets, pump base frames, and fabrication attachments built to drawing control.
             </p>
           </div>
         </div>

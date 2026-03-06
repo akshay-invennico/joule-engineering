@@ -4,7 +4,7 @@ import React from 'react';
 import Image from 'next/image';
 import { ArrowRight } from 'lucide-react';
 import SubHeading from '../subheading/SubHeading';
-import ctaBg from '../../../../public/assets/cta-bg.png'
+import ctaBg from '../../../../public/assets/cta-bg.png';
 
 const CtaSection = () => {
   return (
@@ -12,11 +12,19 @@ const CtaSection = () => {
       <div className="container mx-auto px-4 lg:pl-8 relative z-10">
         <div className="flex flex-col lg:flex-row items-center justify-between">
           <div className="w-full lg:w-1/2 text-white mb-10 lg:mb-0">
-            <SubHeading text="Building Your Vision" className='mb-3' color='white' />
+            <SubHeading
+              text="Building Your Vision"
+              className="mb-3"
+              color="white"
+            />
             <h2 className="text-4xl md:text-5xl lg:text-[44px] font-bold mb-8 leading-tight">
               Let&apos;s Build Dream Something Amazing.
             </h2>
-            <p className='mb-8'>Partner with Joule Engineering Works for quality fabrication solutions backed by engineering expertise and infrastructure strength.</p>
+            <p className="mb-8">
+              Partner with Joule Engineering Works for quality fabrication
+              solutions backed by engineering expertise and infrastructure
+              strength.
+            </p>
 
             <button className="group group-hover:text-[#00AAA5] relative inline-flex items-center justify-center rounded-full transition-all duration-500 h-[46px] overflow-hidden leading-none cursor-pointer">
               {/* Expanding Background */}
@@ -36,7 +44,7 @@ const CtaSection = () => {
             </button>
           </div>
 
-          <div className="w-full lg:w-1/2 relative h-[300px] lg:h-[400px] rounded-2xl overflow-hidden opacity-20 mix-blend-overlay">
+          <div className="w-full lg:w-1/2 relative md:h-[300px] lg:h-[400px]  rounded-2xl overflow-hidden opacity-20 mix-blend-overlay">
             <Image
               src={ctaBg}
               alt="Industrial Background Pattern"

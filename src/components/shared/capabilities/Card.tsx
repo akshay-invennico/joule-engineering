@@ -40,7 +40,7 @@ const Card: React.FC<CardProps> = ({
           </h3>
           <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-5">
             {listItems.map((item, index) => (
-              <li key={index} className="flex items-start font-bold text-[#808080]">
+              <li key={index} className="flex items-start font-semibold text-[#808080]">
                 <span className="mr-2 mt-1.5 w-2 h-2 min-w-[8px] rounded-full bg-[#00A99D]"></span>
                 <span>{item}</span>
               </li>

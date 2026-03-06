@@ -4,8 +4,8 @@ import Image from 'next/image';
 
 const Hero = () => {
   return (
-    <section className="relative w-full min-h-[700px] flex items-start overflow-hidden">
-      <div className="absolute inset-0  z-0">
+    <section className="relative w-full min-h-[900px] max-h-[1200px] flex items-start overflow-hidden">
+      <div className="absolute inset-0  z-0 gap-x-4">
         <Image
           src={HeroImg}
           alt="Industrial Worker with fabrication machinery"
@@ -15,7 +15,7 @@ const Hero = () => {
         />
       </div>
 
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="container mx-auto px-4 py-15 sm:px-6 lg:px-8 relative z-10">
         <div className="w-full md:w-3/4 lg:w-2/3 mt-5">
           <h1 className="text-3xl md:text-4xl lg:text-[44px] font-bold text-primary mb-5">
             Engineering Capabilities

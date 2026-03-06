@@ -6,7 +6,7 @@ import { ArrowRight } from 'lucide-react';
 
 const CtaSection = () => {
   return (
-    <section className="relative w-full h-[420px] sm:h-[480px] md:h-[520px] lg:h-[860px] overflow-hidden">
+    <section className="relative w-full h-[550px] sm:h-[550px] md:h-[600px] lg:h-[860px] overflow-hidden">
       {/* Background Video */}
       <div className="absolute inset-0 w-full h-full z-0">
         <video

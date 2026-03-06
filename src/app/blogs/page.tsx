@@ -32,7 +32,7 @@ const Blogs = () => {
 
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4 lg:px-8">
-          <h1 className='text-primary text-[28px] font-bold leading-[42px] mb-10'>All Articles</h1>
+          <h1 className='text-primary text-[28px] font-bold leading-[42px] mb-10'>{activeCategory}</h1>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {filteredBlogs.map((blog) => (
               <BlogCard key={blog.id} blog={blog} />

@@ -10,7 +10,7 @@ const Blogs = () => {
   return (
     <section className="py-20 bg-white">
       <div className="container mx-auto px-4 lg:px-8">
-        <div className="flex flex-col md:flex-row justify-between items-end mb-10 gap-6">
+        <div className="flex flex-col md:flex-row justify-between md:items-end mb-10 gap-6">
           <div className="max-w-xl">
             <SubHeading text="Our Blog & Article" className='mb-3' color='#00AAA5' />
             <h2 className="text-4xl md:text-[36px] font-bold text-primary">

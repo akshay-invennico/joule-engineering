@@ -1,6 +1,6 @@
-"use client";
+'use client';
 
-import React from "react";
+import React from 'react';
 
 interface Data {
   title: string;
@@ -9,9 +9,10 @@ interface Data {
 }
 
 const data: Data = {
-  title: "Terms & Conditions",
-  subtitle: "Effective Date: March 13, 2025",
-  paragraph: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  title: 'Terms & Conditions',
+  subtitle: 'Effective Date: March 2026',
+  paragraph:
+    'Welcome to Joule Engineering Works. By accessing or using the website https://jouleengineeringworks.com, you agree to comply with and be bound by the following Terms and Conditions. Please read them carefully before using the website. If you do not agree with these terms, you should not use this website.',
 };
 
 const Hero = () => {

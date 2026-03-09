@@ -4,8 +4,8 @@ import nouser from '../../../../public/assets/story.png'
 export interface Testimonial {
   id: number;
   name: string;
-  role: string;
-  company: string;
+  // role: string;
+  // company: string;
   quote: string;
   highlight: string;
   avatar: string | StaticImageData;
@@ -15,46 +15,46 @@ export const testimonials: Testimonial[] = [
   {
     id: 1,
     name: 'Mr. Daniel Scoot',
-    role: 'Founder',
-    company: 'Nexca',
-    quote: '"Feel free to customize the key features based on the services and strategies you offer in each plan. This breakdown helps various potential clients understand the specific value they\'ll receive at each pricing tier. These tools are fundamental for your home and industry factory build Your own studio for creative work".',
-    highlight: 'Great Construction Company!',
+    // role: 'Founder',
+    // company: 'Nexca',
+    quote: '"We have been sourcing engineering components from Joule Engineering Works for quite some time now. The product quality, durability, and finishing are excellent. Their team is professional and always delivers on time."',
+    highlight: 'Excellent Quality & Reliable Service',
     avatar: nouser,
   },
   {
     id: 2,
     name: 'Sarah Johnson',
-    role: 'CEO',
-    company: 'TechBuild',
-    quote: '"The attention to detail and commitment to quality was impressive. They delivered our project on time and within budget, exceeding our expectations in every way."',
-    highlight: 'Exceptional Quality & Service',
+    // role: 'CEO',
+    // company: 'TechBuild',
+    quote: '“Working with Joule Engineering Works has been a smooth experience. Their team understands technical requirements well and provides reliable solutions. Highly recommended for engineering and fabrication needs.”',
+    highlight: 'Professional and Supportive Team',
     avatar: nouser,
   },
   {
     id: 3,
     name: 'Michael Chen',
-    role: 'Director',
-    company: 'Future Infra',
-    quote: '"Their innovative approach to problem-solving saved us significant time and resources. A truly professional team that understands the complexities of modern industrial construction."',
-    highlight: 'Innovative Solutions',
+    // role: 'Director',
+    // company: 'Future Infra',
+    quote: '"Joule Engineering Works consistently delivers high-quality work with great attention to detail. Their commitment to deadlines and workmanship makes them a dependable partner for our projects."',
+    highlight: 'Timely Delivery & Great Workmanship',
     avatar: nouser,
   },
   {
     id: 4,
     name: 'Emily Davis',
-    role: 'Manager',
-    company: 'Green Energy',
-    quote: '"We were looking for a partner who valued sustainability as much as we do. Joule Engineering proved to be that partner, delivering eco-friendly solutions without compromising performance."',
-    highlight: 'Sustainable & Reliable',
+    // role: 'Manager',
+    // company: 'Green Energy',
+    quote: '“We appreciate the professionalism and dedication of the Joule Engineering Works team. Their engineering expertise and consistent product quality make them a trusted partner for our industrial requirements.”',
+    highlight: 'Trusted Engineering Partner',
     avatar: nouser,
   },
   {
     id: 5,
     name: 'Robert Wilson',
-    role: 'Head of Ops',
-    company: 'LogiChain',
-    quote: '"From the initial consultation to final handover, the process was seamless. Their expertise in logistics facility construction is unmatched."',
-    highlight: 'Seamless Execution',
+    // role: 'Head of Ops',
+    // company: 'LogiChain',
+    quote: '“The products supplied by Joule Engineering Works always meet our expectations in terms of quality and performance. Their service and communication throughout the process are excellent.”',
+    highlight: 'Quality That Meets Expectations',
     avatar: nouser,
   },
 ];

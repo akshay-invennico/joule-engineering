@@ -44,7 +44,7 @@ const CtaSection = () => {
             </button>
           </div>
 
-          <div className="w-full lg:w-1/2 relative md:h-[300px] lg:h-[400px]  rounded-2xl overflow-hidden opacity-20 mix-blend-overlay">
+          <div className="w-full lg:w-1/2 relative md:h-[100px] lg:h-[400px]  rounded-2xl overflow-hidden opacity-20 mix-blend-overlay">
             <Image
               src={ctaBg}
               alt="Industrial Background Pattern"
@@ -54,7 +54,6 @@ const CtaSection = () => {
           </div>
         </div>
       </div>
-
     </section>
   );
 };

@@ -76,7 +76,7 @@ const Story = () => {
             </Link>
 
             <div className="md:mt-20">
-              <div className="relative w-32 h-32 hidden md:w-40 md:h-40 md:flex items-center justify-center border rounded-full border-[#233AFF33]">
+              <div className="relative w-32 h-32 hidden lg:w-40 lg:h-40 lg:flex items-center justify-center border rounded-full border-[#233AFF33]">
                 <div className="absolute inset-0 animate-spin-slow">
                   <svg viewBox="0 0 100 100" className="w-full h-full">
                     <defs>

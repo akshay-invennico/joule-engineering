@@ -50,9 +50,9 @@ const TestimonialSection = () => {
                 <h4 className="text-white font-bold text-lg">
                   {testimonials[activeIndex].name}
                 </h4>
-                <p className="text-gray-400 text-sm">
+                {/* <p className="text-gray-400 text-sm">
                   {testimonials[activeIndex].role}, {testimonials[activeIndex].company}
-                </p>
+                </p> */}
               </motion.div>
             </AnimatePresence>
 

@@ -18,7 +18,7 @@ const CtaSection = () => {
               color="white"
             />
             <h2 className="text-4xl md:text-5xl lg:text-[44px] font-bold mb-8 leading-tight">
-              Let&apos;s Build Dream Something Amazing.
+              Let&apos;s Build with Engineering Precision.
             </h2>
             <p className="mb-8">
               Partner with Joule Engineering Works for quality fabrication

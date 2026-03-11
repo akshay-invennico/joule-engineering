@@ -45,7 +45,7 @@ const Blogs = () => {
             </div>
           )}
 
-          <div className='text-primary text-right font-bold leading-[42px] mt-12 mb-10 cursor-pointer'>View more Articles</div>
+          {/* <div className='text-primary text-right font-bold leading-[42px] mt-12 mb-10 cursor-pointer'>View more Articles</div> */}
         </div>
       </section>
     </>

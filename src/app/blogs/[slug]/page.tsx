@@ -57,67 +57,18 @@ const BlogDetailsPage = () => {
         </div>
 
         <div className="max-w-4xl text-[#808080] leading-relaxed space-y-6 text-lg">
-          <p>
-            In today’s rapidly evolving industrial landscape, technology is reshaping
-            the way factories operate. From automation to AI-driven production
-            monitoring, manufacturing processes are becoming more efficient,
-            accurate, and scalable.
-          </p>
-
-          <p>
-            Smart systems enable real-time data tracking, predictive maintenance,
-            and improved quality control. This ensures reduced downtime,
-            minimized waste, and optimized production cycles.
-          </p>
-
-          <h2 className="text-2xl font-bold text-black mt-10">
-            Why It Matters
-          </h2>
-
-          <p>
-            By integrating modern technology into factory workflows, companies
-            can maintain competitive advantage while reducing operational costs.
-            Sustainability goals also become more achievable through efficient
-            energy usage and resource management.
-          </p>
-
-          <p>
-            As innovation continues to accelerate, the factories of the future
-            will rely heavily on digital transformation to drive growth and
-            resilience.
-          </p>
-        </div>
-
-        <div className="max-w-4xl text-[#808080] leading-relaxed space-y-6 text-lg">
-          <p>
-            In today’s rapidly evolving industrial landscape, technology is reshaping
-            the way factories operate. From automation to AI-driven production
-            monitoring, manufacturing processes are becoming more efficient,
-            accurate, and scalable.
-          </p>
-
-          <p>
-            Smart systems enable real-time data tracking, predictive maintenance,
-            and improved quality control. This ensures reduced downtime,
-            minimized waste, and optimized production cycles.
-          </p>
-
-          <h2 className="text-2xl font-bold text-black mt-10">
-            Conclusion
-          </h2>
-
-          <p>
-            By integrating modern technology into factory workflows, companies
-            can maintain competitive advantage while reducing operational costs.
-            Sustainability goals also become more achievable through efficient
-            energy usage and resource management.
-          </p>
-
-          <p>
-            As innovation continues to accelerate, the factories of the future
-            will rely heavily on digital transformation to drive growth and
-            resilience.
-          </p>
+          {blog.content?.map((section, index) => (
+            <React.Fragment key={index}>
+              {section.heading && (
+                <h2 className={`text-2xl font-bold text-black ${index > 0 ? 'mt-10' : ''}`}>
+                  {section.heading}
+                </h2>
+              )}
+              {section.paragraphs.map((para, pIndex) => (
+                <p key={pIndex}>{para}</p>
+              ))}
+            </React.Fragment>
+          ))}
         </div>
 
         <hr className="my-[28px] border border-[#E4E4E4]" />

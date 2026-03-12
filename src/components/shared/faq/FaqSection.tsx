@@ -33,7 +33,7 @@ const FaqSection: React.FC<FaqSectionProps> = ({
   };
 
   return (
-    <section className="py-16 md:py-24 bg-white">
+    <section className="py-8 md:py-24 bg-white">
       <div className="container mx-auto px-4 lg:px-8 max-w-[1000px]">
 
         {showTitle && (

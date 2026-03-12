@@ -71,7 +71,7 @@ export default function Operational() {
   };
 
   return (
-    <section className="bg-white py-20 px-6 lg:px-16 overflow-hidden">
+    <section className="bg-white py-4 px-6 lg:px-16 overflow-hidden">
       <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-12 gap-6">
         <div>
           <SubHeading text="Operational Infrastructure" color="#00AAA5" />
@@ -79,7 +79,7 @@ export default function Operational() {
             Advanced Systems Supporting Controlled Fabrication Execution
           </h2>
           <p className="text-[#808080] text-sm mt-2">
-           Our operational strength is built on a combination of heavy-duty machinery, precision fabrication systems, advanced welding infrastructure, and integrated testing equipment that collectively support diverse industrial fabrication requirements.
+            Our operational strength is built on a combination of heavy-duty machinery, precision fabrication systems, advanced welding infrastructure, and integrated testing equipment that collectively support diverse industrial fabrication requirements.
           </p>
         </div>
 
@@ -105,7 +105,7 @@ export default function Operational() {
         <div
           className="flex gap-6 transition-transform duration-700 ease-in-out"
           style={{
-            transform: `translateX(-${index * (100 / perView)}%)`,
+            transform: `translateX(calc(-${index} * (calc((100% - ${(perView - 1) * 24}px) / ${perView}) + 24px)))`,
           }}
         >
           {data.map((item, i) => (
@@ -113,7 +113,7 @@ export default function Operational() {
               key={i}
               className="relative rounded-xl overflow-hidden shrink-0 group"
               style={{
-                width: `${100 / perView}%`,
+                width: `calc((100% - ${(perView - 1) * 24}px) / ${perView})`,
                 height: '420px',
               }}
             >
@@ -141,11 +141,10 @@ export default function Operational() {
                 </button>
 
                 <div
-                  className={`transition-all duration-500 overflow-hidden ${
-                    activeCard === i
-                      ? 'max-h-40 opacity-100'
-                      : 'max-h-0 opacity-0'
-                  }`}
+                  className={`transition-all duration-500 overflow-hidden ${activeCard === i
+                    ? 'max-h-40 opacity-100'
+                    : 'max-h-0 opacity-0'
+                    }`}
                 >
                   <p className="text-sm opacity-90 max-w-md">
                     {item.description}

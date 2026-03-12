@@ -63,7 +63,7 @@ const Footer = () => {
         {/* Main Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:border-t md:border-[#E4E4E4] border-b mb-8">
           {/* Column 1: Locations */}
-          <div className="md:border-r md:border-[#E4E4E4] py-10">
+          <div className="md:border-r md:border-[#E4E4E4] py-0 md:py-10">
             <h3 className="font-bold text-[20px] mb-6">Our Locations</h3>
 
             <div>
@@ -76,7 +76,7 @@ const Footer = () => {
           </div>
 
           {/* Column 2: Company */}
-          <div className="md:border-r md:border-[#E4E4E4] py-10">
+          <div className="md:border-r md:border-[#E4E4E4] py-0 md:py-10">
             <h3 className="font-bold text-[20px] mb-6 tracking-wide">
               Company
             </h3>
@@ -138,7 +138,7 @@ const Footer = () => {
           </div>
 
           {/* Column 3: Quick Links */}
-          <div className="md:border-r md:border-[#E4E4E4] py-10">
+          <div className="md:border-r md:border-[#E4E4E4] py-0 md:py-10">
             <h3 className="font-bold text-[20px] mb-6 tracking-wide">
               Quick Links
             </h3>

@@ -24,7 +24,7 @@ const Clients = () => {
     { name: 'Thermax', logo: thermax },
   ];
   return (
-    <div className="mx-auto max-w-6xl py-24">
+    <div className="mx-auto max-w-6xl px-4 pt-10 pb-0 lg:py-24">
       <h3 className="text-primary text-2xl md:text-3xl font-bold text-left mb-10">
         Trusted by Leading Industrial & EPC Organizations
       </h3>

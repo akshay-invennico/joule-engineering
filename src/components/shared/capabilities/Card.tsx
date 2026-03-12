@@ -48,7 +48,7 @@ const Card: React.FC<CardProps> = ({
           </ul>
         </div>
 
-        <p className="text-[#808080]">
+        <p className="text-[#808080] mb-4 lg:mb-0">
           {bottomText}
         </p>
       </div>

@@ -9,7 +9,7 @@ import ctaBg from '../../../../public/assets/cta-bg.png';
 const CtaSection = () => {
   return (
     <section className="relative bg-[#00AAA5] overflow-hidden">
-      <div className="container mx-auto px-4 lg:pl-8 relative z-10">
+      <div className="container mx-auto px-4 pt-10 md:pt-0 lg:pl-8 relative z-10">
         <div className="flex flex-col lg:flex-row items-center justify-between">
           <div className="w-full lg:w-1/2 text-white mb-10 lg:mb-0">
             <SubHeading

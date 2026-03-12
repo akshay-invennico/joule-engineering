@@ -19,9 +19,9 @@ const Hero = () => {
               Engineering-Driven Fabrication Solutions
             </h1>
 
-            <div className="flex items-start gap-x-[28px] mt-5">
+            <div className="flex items-start gap-x-0 md:gap-x-[28px] mt-5">
               <div>
-                <div className="relative w-32 h-32 md:w-40 md:h-40 flex items-center justify-center border rounded-full border-[#233AFF33]">
+                <div className="hidden relative w-32 h-32 md:w-40 md:h-40 md:flex items-center justify-center border rounded-full border-[#233AFF33]">
                   <div className="absolute inset-0 animate-spin-slow">
                     <svg viewBox="0 0 100 100" className="w-full h-full">
                       <defs>
@@ -67,7 +67,7 @@ const Hero = () => {
                 </div>
               </div>
 
-              <div className="h-[150px] w-px bg-[#E4E4E4]" />
+              <div className="hidden md:block h-[150px] w-px bg-[#E4E4E4]" />
               <p className="max-w-2xl text-base leading-relaxed text-[#808080] sm:text-lg">
                 Joule Engineering Works is a Gujarat based engineering and
                 manufacturing company in India that builds process equipment and

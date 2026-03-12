@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Menu, X, ChevronDown } from 'lucide-react';
@@ -15,6 +15,8 @@ const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [mobileCompanyOpen, setMobileCompanyOpen] = useState(false);
+  const menuRef = useRef<HTMLDivElement>(null);
+  const buttonRef = useRef<HTMLButtonElement>(null);
 
   const companyDropdown = [
     { label: 'About Us', href: routes.about },
@@ -31,6 +33,23 @@ const Header = () => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        isMobileMenuOpen &&
+        menuRef.current &&
+        !menuRef.current.contains(event.target as Node) &&
+        buttonRef.current &&
+        !buttonRef.current.contains(event.target as Node)
+      ) {
+        setIsMobileMenuOpen(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, [isMobileMenuOpen]);
 
   const navItems = [
     { label: 'Capabilities', href: routes.capabilites, hasDropdown: false },
@@ -127,6 +146,7 @@ const Header = () => {
           </div>
 
           <button
+            ref={buttonRef}
             className="lg:hidden text-gray-500 hover:text-primary transition-colors"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
@@ -152,7 +172,10 @@ const Header = () => {
       </div>
 
       {isMobileMenuOpen && (
-        <div className="lg:hidden bg-white absolute top-full left-0 w-full border-t border-gray-100 py-4 px-4 flex flex-col gap-4 animate-in slide-in-from-top-2">
+        <div
+          ref={menuRef}
+          className="lg:hidden bg-white absolute top-full left-0 w-full border-t border-gray-100 py-4 px-4 flex flex-col gap-4 animate-in slide-in-from-top-2"
+        >
           {navItems.map(item => (
             <div key={item.label}>
               {!item.hasDropdown ? (

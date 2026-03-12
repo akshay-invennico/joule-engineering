@@ -44,7 +44,7 @@ const Clients = () => {
         ))}
       </div>
 
-      <div className="text-center">
+      <div className="text-center pb-6">
         <Link href={routes.clients} className="inline-flex items-center gap-2 text-primary font-semibold text-sm hover:gap-3 transition-all">
           <span>View All Clients</span>
           <ChevronRight size={18} />

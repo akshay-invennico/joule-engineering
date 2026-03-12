@@ -71,7 +71,7 @@ export default function Operational() {
   };
 
   return (
-    <section className="bg-white py-4 px-6 lg:px-16 overflow-hidden">
+    <section className="bg-white py-4 lg:py-20 px-6 lg:px-16 overflow-hidden">
       <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-12 gap-6">
         <div>
           <SubHeading text="Operational Infrastructure" color="#00AAA5" />
